@@ -4,7 +4,7 @@
 margin: 0;
 padding: 0;
 }
-body 
+body
 {
 	background-color: grey;
 }
@@ -27,7 +27,7 @@ background-size: 100% 100%; /*largeur de l'image de fond*/
 	height: auto;
 	display: flex;
 	z-index: 1;
-	
+
 	}
 
 .titre
@@ -46,35 +46,37 @@ color:black;
 
 
 }
- 
+
 .titreMenu, .contenuMenu, .lienMenu{
  color: #000000;
 }
- 
+
 .titreMenu, .contenuMenu{
+	/*
  border: 2px outset #AAAAAA;
+ */
  width: 10em;
  text-align: center;
  margin: 2px;
  padding: 2px;
 }
- 
+
 .contenuMenu{
  display: none;
  position: absolute;
  background-color: #FFFFFF;
  overflow: auto;
 }
- 
- 
+
+
 .itemOver{
  background-color: #AAAAFF
 }
- 
+
 .itemOut{
  background-color: #FFFFFF; /* couleur fond */
 }
- 
+
 .lienMenu{
  text-decoration: none;
 }
@@ -89,5 +91,43 @@ margin-right: 5em;
 margin-left: 5em;
 
 }
- 
+#Menu1Item,#Menu1Titre,#Menu1,.itemOut1,.itemOver1{
+	background-color: yellow;
+	color: white;
+
+}
+#Menu2Item,#Menu2Titre,#Menu2,.itemOut2,.itemOver2{
+	background-color:green;
+	color: white;
+
+}
+#Menu3Item,#Menu3Titre,#Menu3,.itemOut3,.itemOver3{
+	background-color: orange;
+	color: white;
+
+}
+#Menu4Item,#Menu4Titre,#Menu4,.itemOut4,.itemOver4{
+	background-color: blue;
+	color: white;
+
+}
+#Menu5Item,#Menu5Titre,#Menu5,.itemOut5,.itemOver5{
+	background-color: red;
+	color: white;
+
+}
+#Menu6Item,#Menu6Titre,#Menu6,.itemOut6,.itemOver6{
+	background-color: green;
+	color: white;
+
+}
+#Menu7Item,#Menu7Titre,#Menu7,.itemOut7,.itemOver7{
+	background-color: Purple;
+	color: white;
+
+}
+.lienMenu{
+	color: white;
+}
+
 /******** Fin de la feuille de styles du menu ************/
