@@ -1,0 +1,17 @@
+@media screen and (max-width: 1280px){
+
+      .corpst
+      {
+      overflow: auto;
+      padding: 2em;
+      background-color: rgba(174, 181, 173, 0.6);
+      }
+
+  @media all and (min-width: 1280px){
+  .corpst
+  {
+  padding: 2em;
+  background-color: rgba(174, 181, 173, 0.6);
+  margin-right: 5em;
+  margin-left: 5em;
+  }

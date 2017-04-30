@@ -45,12 +45,6 @@ text-decoration: none;
       .lienMenu{
        text-decoration: none;
       }
-      .corpst
-      {
-      overflow: auto;
-      padding: 2em;
-      background-color: rgba(174, 181, 173, 0.6);
-      }
     #Menu1,#Menu1Item{
       background-color: gold;
     }
@@ -91,13 +85,6 @@ text-decoration: none;
   }
   .lienMenu{
    text-decoration: none;
-  }
-  .corpst
-  {
-  padding: 2em;
-  background-color: rgba(174, 181, 173, 0.6);
-  margin-right: 5em;
-  margin-left: 5em;
   }
   #Menu1,#Menu1Item{
     background-color: gold;
