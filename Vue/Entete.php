@@ -9,16 +9,18 @@
 </head>
 
 <body class="entete">
+  <button type="button"><?php Connexion ?></button>
+
 <!-- Debut code HTML du menu -->
 <div class="Menu">
   <ul>
-    <li>Renseignements</li>
-    <li>Farfadets</li>
-    <li>Louveteaux</br>Jeanettes</li>
-    <li>Scouts</li>
-    <li>Pionniers</br>Caravelles</li>
-    <li>Compagnons</li>
-    <li>Chefs</li>
+    <li><?php Renseignements?></li>
+    <li><?php Farfadets ?></li>
+    <li><?php Louveteaux ?></br><?php Jeanettes ?></li>
+    <li><?php Scouts ?></li>
+    <li><?php Pionniers ?></br><?php Caravelles ?></li>
+    <li><?phpCompagnons ?></li>
+    <li><?php Chefs ?></li>
   </ul>
 </div>
 </body>
