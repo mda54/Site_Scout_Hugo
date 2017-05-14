@@ -3,18 +3,28 @@
 color: red;
 margin:0;
 padding: 0;
-padding-left: 3em;
+padding-left: 3vh;
+
 }
-.entete{
+html{
+  height: 100vh;
+}
+body{
+  opacity: 0.7;
+  text-align: center;
+  min-height: 100vh;
 }
 .menu{
   float: left;
   margin: 0;
   padding: 0;
 }
+ul{
+  background-color: white;
+  min-height: 100vh;
+}
 li {
-padding: 1.5em;
-color: black;
-display: block;
-background-color: white;
+  padding: 6vh;
+  color: black;
+  display: block;
 }

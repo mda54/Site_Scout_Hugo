@@ -9,9 +9,9 @@ include_once'fonction/langue.php';
    <script type="text/javascript" src="../js/function.js"></script>
    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 </head>
-
 <body class="entete" background="images/Fond.jpg">
   <div class="menu">
+    <ul>
       <li><?php echo Renseignements?></li>
       <li><?php echo Farfadets ?></li>
       <li><?php echo 'Louveteaux  Jeanettes' ?></li>
@@ -19,6 +19,7 @@ include_once'fonction/langue.php';
       <li><?php echo 'Pionniers  Caravelles' ?></li>
       <li><?php echo Compagnons ?></li>
       <li><?php echo Chefs ?></li>
+    </ul>
   </div>
 </body>
 
