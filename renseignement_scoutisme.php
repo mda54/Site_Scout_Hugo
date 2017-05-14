@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 <head>
-  <link rel="stylesheet" href="../Vue/Renseignement_Scoutisme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/renseignement_scoutisme.css" type="text/css" />
 </head>
-<?php include("Entete.php"); ?>
+<?php include("entete.php"); ?>
 </br>
 
 

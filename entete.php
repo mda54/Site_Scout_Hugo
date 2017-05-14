@@ -3,12 +3,12 @@
 <head>
    <title>Accueil-Scouts Saint-Fiacre Pulnoy</title>
    <meta http-equiv="Content-Language" content="fr" />
-   <link rel="stylesheet" href="../Vue/Entete.css" type="text/css" />
-   <script type="text/javascript" src="../Modele/function.js"></script>
+   <link rel="stylesheet" href="../css/entete.css" type="text/css" />
+   <script type="text/javascript" src="../js/function.js"></script>
    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 </head>
 
-<body class="entete" background="../Images/Fond.jpg">
+<body class="entete" background="images/Fond.jpg">
   <div class="menu">
       <li><?php echo Renseignements?></li>
       <li><?php echo Farfadets ?></li>

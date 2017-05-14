@@ -8,13 +8,11 @@ padding-left: 3em;
 .entete{
 }
 .menu{
-  height: 100%;
   float: left;
   margin: 0;
   padding: 0;
 }
 li {
-
 padding: 1.5em;
 color: black;
 display: block;
