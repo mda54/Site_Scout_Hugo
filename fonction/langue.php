@@ -8,13 +8,13 @@ elseif(isset($_GET['langue']) and $_GET['langue']=='en') {
 }
 
 if (isset($_SESSION['langue']) and $_SESSION['langue']=='fr') {
-	include('../langues/French.php');
+	include('langues/french.php');
 }
 elseif (isset($_SESSION['langue']) and $_SESSION['langue']=='en') {
-	include('../langues/English.php');
+	include('langues/english.php');
 }
 else{
-	include('../langues/French.php');
+	include('langues/french.php');
 }
 
 ?>

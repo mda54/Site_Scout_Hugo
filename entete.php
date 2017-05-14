@@ -1,9 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<?php
+include_once'fonction/langue.php';
+?>
 <html>
 <head>
    <title>Accueil-Scouts Saint-Fiacre Pulnoy</title>
    <meta http-equiv="Content-Language" content="fr" />
-   <link rel="stylesheet" href="../css/entete.css" type="text/css" />
+   <link rel="stylesheet" href="css/entete.css" type="text/css" />
    <script type="text/javascript" src="../js/function.js"></script>
    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 </head>
