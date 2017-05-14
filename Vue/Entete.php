@@ -8,21 +8,16 @@
    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 </head>
 
-<body class="entete">
-  <button type="button"><?php Connexion ?></button>
-
-<!-- Debut code HTML du menu -->
-<div class="Menu">
-  <ul>
-    <li><?php Renseignements?></li>
-    <li><?php Farfadets ?></li>
-    <li><?php Louveteaux ?></br><?php Jeanettes ?></li>
-    <li><?php Scouts ?></li>
-    <li><?php Pionniers ?></br><?php Caravelles ?></li>
-    <li><?phpCompagnons ?></li>
-    <li><?php Chefs ?></li>
-  </ul>
-</div>
+<body class="entete" background="../Images/Fond.jpg">
+  <div class="menu">
+      <li><?php echo Renseignements?></li>
+      <li><?php echo Farfadets ?></li>
+      <li><?php echo 'Louveteaux  Jeanettes' ?></li>
+      <li><?php echo Scouts ?></li>
+      <li><?php echo 'Pionniers  Caravelles' ?></li>
+      <li><?php echo Compagnons ?></li>
+      <li><?php echo Chefs ?></li>
+  </div>
 </body>
 
 </html>

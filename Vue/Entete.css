@@ -1,41 +1,22 @@
-/******** Feuille de styles du menu ************/
-* /*Permet d'enlever les petits espaces gauche/droite */
+*
 {
-margin: 0;
+color: red;
+margin:0;
 padding: 0;
-/*
-overflow: auto;
-color:white;
-*/
-
-background-image: url("../Images/Fond.jpg");
-
-width: auto;
-height: auto;
-background-color: WHITE;
+padding-left: 3em;
 }
-.Menu{
-  color: BLACK;
+.entete{
+}
+.menu{
+  height: 100%;
   float: left;
+  margin: 0;
+  padding: 0;
 }
-ul{/*
-  background-color: white;
-  */
+li {
+
+padding: 1.5em;
+color: black;
+display: block;
+background-color: white;
 }
-/*
-body
-{
-  background-color: grey;
-}/*
-.imgtete
-  {
-  width: 100%;
-  height: auto;
-  display: flex;
-  z-index: 1;
-  }
-.titre
-{
-text-decoration: none;
-}
-/******** Fin de la feuille de styles du menu ************/
