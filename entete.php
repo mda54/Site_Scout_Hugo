@@ -1,9 +1,9 @@
 <?php
-include_once'fonction/langue.php';
 session_start();
 if (!isset($_SESSION['langue']) and isset($_GET['langue'])) {
   $_SESSION['langue']=$_GET['langue'];
 }
+include_once'fonction/langue.php';
 ?>
 <html>
 <head>
@@ -16,13 +16,13 @@ if (!isset($_SESSION['langue']) and isset($_GET['langue'])) {
 <body class="entete" background="images/Fond.jpg">
   <div class="menu">
     <ul class="liste">
-      <li class="liste"><?php echo Renseignements?></li>
-      <li class="liste"><?php echo Farfadets ?></li>
-      <li class="liste"><?php echo 'Louveteaux  Jeanettes' ?></li>
-      <li class="liste"><?php echo Scouts ?></li>
-      <li class="liste"><?php echo 'Pionniers  Caravelles' ?></li>
-      <li class="liste"><?php echo Compagnons ?></li>
-      <li class="liste"><?php echo Chefs ?></li>
+      <li class="liste"><a class="liste" href="renseignement.php"> <?php echo Renseignements?></a></li>
+      <li class="liste"><a class="liste" href="farfadets.php"> <?php echo Farfadets ?></a></li>
+      <li class="liste"><a class="liste" href="louveteaux.php"> <?php echo Louveteaux ?></a></li>
+      <li class="liste"><a class="liste" href="scouts.php"> <?php echo Scouts ?></a></li>
+      <li class="liste"><a class="liste" href="pionniers.php"> <?php echo Pionniers ?></a></li>
+      <li class="liste"><a class="liste" href="compagnons.php"> <?php echo Compagnons ?></a></li>
+      <li class="liste"><a class="liste" href="chefs.php"> <?php echo Chefs ?></a></li>
     </ul>
   </div>
   <ul class="langue">

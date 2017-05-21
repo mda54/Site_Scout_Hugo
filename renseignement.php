@@ -4,9 +4,5 @@
   <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 <?php include("entete.php"); ?>
-</br>
-<div class="corpst">
-  <p><?php echo Description ?>
-</div>
 
 </html>
