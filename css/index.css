@@ -1,17 +1,24 @@
 .corpst
 {
-overflow: auto;
-padding: 2em;
+margin-left:0;
+padding: 1.5em;
 background-color: rgba(174, 181, 173, 0.6);
+}
+p.corpst{
+  margin-left: 1em;
 }
 
 @media screen and (max-width: 1280px){
-
-    }
+  .corpst
+  {
+    margin-left: 9.5em;
+    margin-right: 1.5em;
+  }
+}
 @media all and (min-width: 1280px){
   .corpst
   {
-  margin-right: 5em;
-  margin-left: 5em;
+    margin-right: 3em;
+    margin-left: 15em;
   }
 }

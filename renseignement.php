@@ -4,5 +4,9 @@
   <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 <?php include("entete.php"); ?>
+<div class="description">
+  <h1>Renseignements généraux</h1>
+</div>
+
 
 </html>

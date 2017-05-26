@@ -4,6 +4,16 @@ if (!isset($_SESSION['langue']) and isset($_GET['langue'])) {
   $_SESSION['langue']=$_GET['langue'];
 }
 include_once'fonction/langue.php';
+
+if (isset($_GET['key'])){
+  if ($_GET['key']=="farfadets") {$index="farfadets";}
+  elseif ($_GET['key']=="louveteaux") {$index="louveteaux";}
+  elseif ($_GET['key']=="scouts") {$index="scouts";}
+  elseif ($_GET['key']=="pionniers") {$index="pionniers";}
+  elseif ($_GET['key']=="compagnons") {$index="compagnons";}
+  else {$index="all";}
+}else {  $index="all";}
+
 ?>
 <html>
 <head>
@@ -11,18 +21,18 @@ include_once'fonction/langue.php';
    <meta http-equiv="Content-Language" content="fr" />
    <link rel="stylesheet" href="css/entete.css" type="text/css" />
    <script type="text/javascript" src="js/function.js"></script>
-   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+   <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 </head>
 <body class="entete" background="images/Fond.jpg">
   <div class="menu">
     <ul class="liste">
+      <li class="liste"><a class="liste" href="index.php"> <?php echo Accueil?></a></li>
       <li class="liste"><a class="liste" href="renseignement.php"> <?php echo Renseignements?></a></li>
-      <li class="liste"><a class="liste" href="farfadets.php"> <?php echo Farfadets ?></a></li>
-      <li class="liste"><a class="liste" href="louveteaux.php"> <?php echo Louveteaux ?></a></li>
-      <li class="liste"><a class="liste" href="scouts.php"> <?php echo Scouts ?></a></li>
-      <li class="liste"><a class="liste" href="pionniers.php"> <?php echo Pionniers ?></a></li>
-      <li class="liste"><a class="liste" href="compagnons.php"> <?php echo Compagnons ?></a></li>
-      <li class="liste"><a class="liste" href="chefs.php"> <?php echo Chefs ?></a></li>
+      <li class="liste"><a class="liste" href="groupes.php?key=farfadets"> <?php echo Farfadets ?></a></li>
+      <li class="liste"><a class="liste" href="groupes.php?key=louveteaux"> <?php echo Louveteaux ?></a></li>
+      <li class="liste"><a class="liste" href="groupes.php?key=scouts"> <?php echo Scouts ?></a></li>
+      <li class="liste"><a class="liste" href="groupes.php?key=pionniers"> <?php echo Pionniers ?></a></li>
+      <li class="liste"><a class="liste" href="groupes.php?key=compagnons"> <?php echo Compagnons ?></a></li>
     </ul>
   </div>
   <ul class="langue">
@@ -43,6 +53,21 @@ include_once'fonction/langue.php';
             <li id="bottom2"><a href="<?php echo $url ?>?langue=en">EN</a></li>
         </ul>
   </ul>
+  <div class="logo">
+    <?php if ($index=="all") {?>
+      <a href="articles.php?key=all"><img src="images/logo_accueil/article.svg"/></a>
+      <a href="calendrier.php?key=all"><img src="images/logo_accueil/calendrier.svg"/></a>
+      <a href="contact.php?key=all"><img src="images/logo_accueil/contact.svg"/></a>
+      <a href="photos.php?key=all"><img src="images/logo_accueil/photo.svg"/></a>
+      <?php
+    }else { ?>
+      <a href="articles.php?key=all"><img src='images/<?php echo $index; ?>/article.svg'/></a>
+      <a href="calendrier.php?key=all"><img src='images/<?php echo $index; ?>/calendrier.svg'/></a>
+      <a href="contact.php?key=all"><img src='images/<?php echo $index; ?>/contact.svg'/></a>
+      <a href="photos.php?key=all"><img src='images/<?php echo $index; ?>/photo.svg'/></a>
+      <?php } ?>
+    </br>
+  </div>
 </body>
 
 </html>

@@ -3,6 +3,7 @@
 $url = $_SERVER['PHP_SELF'];
 
 //////////////////////////////////////////// HOMETOP ////////////////////////////////////////////
+if (!defined('Accueil')){define("Accueil", "Accueil");}
 if (!defined('Connexion')){define("Connexion", "Connexion");}
 if (!defined('Renseignements')){define("Renseignements", "Renseignements");}
 if (!defined('Farfadets')){define("Farfadets", "Farfadets");}

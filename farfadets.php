@@ -4,5 +4,15 @@
   <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 <?php include("entete.php"); ?>
+<div class="description">
+  <h1>Renseignements généraux</h1>
+</div>
+<div class="Photo">
+  <h1>Quelque photo</h1>
+  <h2><a href="photo.php?key=Farfadets">En voir plus</h2>
+</div>
+<div class="Calendrier">
+  <h1>Calendrier</h1>
+</div>
 
 </html>
