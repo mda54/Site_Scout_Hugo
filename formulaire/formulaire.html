@@ -1,18 +1,16 @@
-<!doctype html>
 <html lang="fr">
-
 	<head>
 		<link rel="stylesheet"/>
 		<link rel="stylesheet" href="css/formulaire.css"/>
-		
+
 	<meta charset="utf-8">
 		<title>TP1</title>
 	</head>
-	
+
 	<body>
 	<form method=post action="traitement.php">
 		<fieldset class="formulaire">
-			<legend>Envoi de mail</legend>	
+			<legend>Envoyer un mail</legend>
 				<p>
 					<input type="radio" name="formulaire" value="farfadets"/><label for="farfadets">Farfadets</label>
 					<input type="radio" name="formulaire" value="louveteaux"/><label for="louveteaux">Louveteaux</label>
@@ -26,10 +24,11 @@
 				<input class="text" name="adresse" type="mail" size=30></br>
 
 		        <label>Ecrivez votre message:</label></br>
-		        <textarea class="text" id="zonemail" name="zonetext"></textarea></br>    
+		        <textarea class="text" id="zonemail" name="zonetext"></textarea></br>
 
 		 		<input class="button" type=submit value=Envoyer>
  		</fieldset>
+	</form>
 	</body>
-	
+
 </html>
