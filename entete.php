@@ -79,3 +79,5 @@ if (isset($_GET['key'])){
       <?php } ?>
     </br>
   </div>
+</body>
+</html>

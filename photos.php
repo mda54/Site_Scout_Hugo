@@ -1,6 +1,6 @@
 <html>
 <head>
-  <link rel="stylesheet" href="photos.css" type="text/css" />
+  <link rel="stylesheet" href="css/photos.css" type="text/css" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 </head>
 <?php include("entete.php"); ?>
