@@ -3,9 +3,8 @@ include_once("fonction/password_maker.php");
 include_once("fonction/password_verify.php");
 include_once("fonction/get_mdpFromMail.php");
 session_start();
+$_SESSION['connexion']=true;
 include_once("fonction/get_articleByID.php");
-$listID=get_articleByID();
-$erreur_adm="";
 
 if (isset($_POST['Article_Add_choix']) and $_POST['Article_Add_choix']!="" and isset($_POST['Article_language']) and $_POST['Article_language']!="" and isset($_POST['Article_contenu']) and $_POST['Article_contenu']!="") {
   include_once("fonction/add_articleByCategorieAndLanguage.php");
@@ -13,9 +12,9 @@ if (isset($_POST['Article_Add_choix']) and $_POST['Article_Add_choix']!="" and i
   add_articleByCategorieAndLanguage($_POST['Article_contenu'],$_POST['Article_Add_choix'],$_POST['Article_language']);
 }
 
-if (isset($_POST['Article_Delete_choix']) and  $_POST['Article_Delete_choix']!= "" and isset($_POST['Article_id']) and $_POST['Article_id']!="") {
+if (isset($_POST['Article_id']) and $_POST['Article_id']!="") {
   include_once('fonction/delete_article.php');
-  delete_article($_POST['Article_id'],$_POST['Article_Delete_choix']);
+  delete_article($_POST['Article_id']);
 }
 
 if (isset($_POST['Admin_mail']) and isset($_POST['Admin_passe1']) and isset($_POST['Admin_passe2']) and $_POST['Admin_mail']!="" and $_POST['Admin_passe1']!="" and $_POST['Admin_passe2']!=""){
@@ -26,19 +25,45 @@ if (isset($_POST['Admin_mail']) and isset($_POST['Admin_passe1']) and isset($_PO
       $erreur_adm="Le mot de passe est inférieur à 6 caractères";
     }else {
       include("fonction/add_admin.php");
-      include("fontion/password_maker.php");
       add_admin($_POST['Admin_mail'],password_maker($_POST['Admin_passe1']));
     }
   }
 
+}
+if (isset($_POST['Admin_mail1']) and isset($_POST['Admin_mail2']) and $_POST['Admin_mail1']!="" and $_POST['Admin_mail2']!="") {
+  if ($_POST['Admin_mail1']!=$_POST['Admin_mail2']) {
+    $erreur_admin="Les deux adresses ne sont pas identiques";
+  }else {
+    include("fonction/delete_admin.php");
+    delete_admin($_POST['Admin_mail1']);
+  }
+}
+if (isset($_POST['Accueil_language']) and isset($_POST['Accueil_text']) and $_POST['Accueil_language']!="" and $_POST['Accueil_text']!="") {
+  include("fonction/modif_Accueil.php");
+  modif_Accueil($_POST['Accueil_language'],$_POST['Accueil_text']);
+}
+if (isset($_POST['Accueil_text_fr']) and $_POST['Accueil_text_fr']!="") {
+  include('fonction/modif_Accueil.php');
+  modif_Accueil("francais",$_POST['Accueil_text_fr']);
+}
+if (isset($_POST['Accueil_text_en']) and $_POST['Accueil_text_en']!="") {
+  include('fonction/modif_Accueil.php');
+  modif_Accueil("anglais",$_POST['Accueil_text_en']);
+}
+if (isset($_POST['Photo_categorie']) and isset($_FILES['Photo_chemin']['name']) and $_POST['Photo_categorie']!="" and $_FILES['Photo_chemin']['name']!="") {
+  $extensions_valides = array( 'jpg' , 'jpeg' ,'png' );
+  $extension_upload = strtolower(substr(strrchr($_FILES['Photo_chemin']['name'], '.')  ,1)  );
+  if ( !in_array($extension_upload,$extensions_valides) ) $erreur_photo="extention invalide";
+  if ($_FILES['Photo_chemin']['size'] > $_POST['MAX_FILE_SIZE']) $erreur_photo = "Le fichier est trop gros";
+  $chemin = "images/photo/".$_POST['Photo_categorie']."/";
+  $resultat = move_uploaded_file($_FILES['Photo_chemin']['tmp_name'],$chemin.$_FILES['Photo_chemin']['name']);
+  if ($resultat) $erreur_photo="Transfert réussi";
 }
 
 if (isset($_POST['passe']) and isset($_POST['mail']) and password_verify($_POST['passe'],get_password($_POST['mail']))) {
   $_SESSION['mail']=$_POST['mail'];
   $_SESSION['passe']=$_POST['passe'];
   $erreur=false;
-  echo $_SESSION['mail'];
-  echo $_SESSION['passe'];
 }elseif (isset($_SESSION['mail']) and isset($_SESSION['passe']) and password_verify($_SESSION['passe'],get_password($_SESSION['mail']))) {
   $erreur=false;
 }else {
@@ -57,8 +82,8 @@ if ($erreur==false) {
 </body>
 <h1>Bienvenue dans la partie administrateur</h1></br>
 <h1>Photo</h1>
-<h3>Ajouter une photo</h3>
-<form action='admin.php' method="post">
+<h3>Ajouter une photo(JPG,JPEG ou PNG| max 15 Ko)</h3>
+<form action='admin.php' method="post" enctype="multipart/form-data">
 <select name="Photo_categorie">
   <option value="">Selectionner</option>
   <?php foreach ($categorie as $key) {?>
@@ -68,7 +93,14 @@ if ($erreur==false) {
     ?>
 </select>
 </br>
-<input type="file" name="Photo_chemin"/>
+<input type="file" name="Photo_chemin" id="Photo_chemin"/>
+<input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+</br>
+<?php
+if (isset($erreur_photo)) {
+  echo $erreur_photo;
+}
+ ?>
 </br>
   <input type="submit" value="Ajouter" />
 </form>
@@ -77,6 +109,11 @@ if ($erreur==false) {
 <form action='admin.php' method="post">
 <select name="Article_Add_choix">
   <option value="">Selectionner</option>
+  <?php foreach ($categorie as $key) {?>
+    <option value='<?php echo $key; ?>'><?php echo $key; ?></option>
+    <?php
+  }
+    ?>
 </select></br>
 <select name="Article_language">
   <option value="">Selectionner</option>
@@ -93,12 +130,12 @@ if ($erreur==false) {
 <select name="Article_id"/>
 <option value=''>Selectionner</option>
 <?php
+$listID=get_articleByID();
 foreach ($listID as $id) {?>
   <option value='<?php echo $id['id'] ?>'><?php echo $id['id'] ?></option>
 <?php
 }
  ?>
-
 </select>
 </br>
   <input type="submit" value="Supprimer" />
@@ -116,7 +153,7 @@ foreach ($listID as $id) {?>
   <input type="submit" value="Ajouter" />
   </br>
 </form>
-<?php if($erreur_adm!=""){?>
+<?php if(isset($erreur_adm)){?>
 <a><?php echo $erreur_adm; ?></a>
 <?php } ?>
 <h3>Supprimer un compte administrateur</h3>
@@ -127,18 +164,30 @@ foreach ($listID as $id) {?>
   </br>
   <input type="submit" value="Supprimer" />
 </form>
+<?php if (isset($erreur_admin)){?>
+  <a><?php echo $erreur_admin;?></a><?php
+} ?>
 <h1>Message d'accueil</h1>
-<h3>Modifier le message d'accueil</h3>
+<h3>Modifier le message d'accueil francais</h3>
 <form action='admin.php' method="post">
-  <select name="Accueil_language">
-    <option value="">Selectionner</option>
-    <option value='francais'>Français</option>
-    <option value='anglais'>Anglais</option>
-  </select></br>
-  <input type="text" name="Accueil_text" rows="5" cols="100" placeholder="coucou c est moi" />
+</br>
+  <?php
+  include("fonction/get_accueil.php");
+  $text_fr=get_accueil("francais");
+  $text_en=get_accueil("anglais");
+  ?>
+  <input type="text" name="Accueil_text_fr" rows="5" cols="100" value='<?php echo $text_fr ?>'/>
 </br>
   <input type="submit" value="Modifier" />
 </form>
+<h3>Modifier le message d'accueil anglais</h3>
+<form action='admin.php' method="post">
+</br>
+  <input type="text" name="Accueil_text_en" rows="5" cols="100" value='<?php echo $text_en ?>' />
+</br>
+  <input type="submit" value="Modifier" />
+</form>
+<h3><a href="index.php?deco=true">Déconnexion</h3>
 </body>
 </html>
 <?php } ?>
