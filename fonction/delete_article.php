@@ -1,12 +1,10 @@
 <?php
-function delete_article($Id,$categorie){
+function delete_article($Id){
 	$Id=(int)$Id;
 	include'connexion_sql.php';
-	$req = $bdd->prepare('DELETE FROM article WHERE id =:Id AND categorie=:categorie');
+	$req = $bdd->prepare('DELETE FROM article WHERE id =:Id');
 		$req->execute(array(
-			'Id' => $Id,
-			'categorie' => $categorie
+			'Id' => $Id
 	));
-	return true;
 	}
 ?>

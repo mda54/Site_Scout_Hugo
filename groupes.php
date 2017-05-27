@@ -4,10 +4,10 @@
 </head>
 <?php include("entete.php"); ?>
 <div class="description">
-  <h1>Renseignements généraux <?php echo $index ?></h1>
+  <h1><?php echo Renseignements_generaux." ".ucfirst($index) ?></h1>
 </div>
 <div class="Photo">
-  <h1>Quelque photo </h1>
+  <h1><?php echo Quelques_photos ?></h1>
   <?php
   $list=array_map("utf8_encode",scandir('images/photo/'.$index));
   array_shift($list);array_shift($list);
@@ -24,10 +24,10 @@
   }
 }
   ?>
-  <h2><a href='photos.php?key=<?php echo  $index ?>'>En voir plus</a></h2>
+  <h2><a href='photos.php?key=<?php echo  $index ?>'><?php echo More ?></a></h2>
 </div>
 <div class="Calendrier">
-  <h1>Calendrier</h1>
+  <h1><?php Calendrier ?></h1>
 </div>
 
 </html>

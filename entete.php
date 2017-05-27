@@ -1,7 +1,12 @@
 <?php
-if (isset($_SESSION['langue'])or isset($_SESSION['passe']) or isset($_SESSION['mail'])){
+if (isset($_GET['deco']) and $_GET['deco']==true) {
+  session_start();
+  session_destroy();
+}
+if (isset($_SESSION['langue'])or isset($_SESSION['passe']) or isset($_SESSION['mail'])or isset($_SESSION['connexion'])){
 }else{
   session_start();
+  $_SESSION['connexion']=true;
 }
 if (!isset($_SESSION['langue']) and isset($_GET['langue'])) {
   $_SESSION['langue']=$_GET['langue'];
@@ -71,6 +76,3 @@ if (isset($_GET['key'])){
       <?php } ?>
     </br>
   </div>
-</body>
-
-</html>

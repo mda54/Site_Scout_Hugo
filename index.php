@@ -6,7 +6,16 @@
 <?php include("entete.php"); ?>
 </br>
 <div class="corpst">
-  <p><?php echo Description ?>
+  <p><?php include('fonction/get_accueil.php');
+  if (isset($_SESSION['langue'])) {
+    if ($_SESSION['langue']=="fr") {
+      echo get_accueil("francais");
+    }else{
+      echo get_accueil('anglais');
+    }
+  }else {
+      echo get_accueil("francais");
+    } ?>
 </div>
 
 
