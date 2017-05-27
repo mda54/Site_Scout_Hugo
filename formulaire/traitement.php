@@ -1,14 +1,14 @@
-<?php 
+<?php
 function envoi_mail1($to,$objet,$message,$headers){
 /*
 $zonetext = $_POST['zonetext'];
 $adresse = $_POST['adresse'];
- 
+
 $message = "$zonetext";
- 
+
 $to = 'manond@live.fr';
 $objet = "Renseignements"; //Met l'objet que tu veux
- 
+
 /* En-têtes de l'e-mail */
 /*
 $headers = "From: $adresse \r\n\r\n";
