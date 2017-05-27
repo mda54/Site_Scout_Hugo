@@ -1,4 +1,4 @@
-<?php
+<?php /*cookies session  de la langue*/
 if (isset($_SESSION['langue'])or isset($_SESSION['passe']) or isset($_SESSION['mail'])){
 }else{
   session_start();
@@ -6,8 +6,8 @@ if (isset($_SESSION['langue'])or isset($_SESSION['passe']) or isset($_SESSION['m
 if (!isset($_SESSION['langue']) and isset($_GET['langue'])) {
   $_SESSION['langue']=$_GET['langue'];
 }
-include_once'fonction/langue.php';
-
+include_once'fonction/langue.php';/*recherche traduction*/
+/*en-tête logo*/
 if (isset($_GET['key'])){
   if ($_GET['key']=="farfadets") {$index="farfadets";}
   elseif ($_GET['key']=="louveteaux") {$index="louveteaux";}
@@ -29,15 +29,16 @@ if (isset($_GET['key'])){
 <body class="entete" background="images/Fond.jpg">
   <div class="menu">
     <ul class="liste">
-      <li class="liste"><a class="liste" href="index.php"> <?php echo Accueil?></a></li>
-      <li class="liste"><a class="liste" href="renseignement.php"> <?php echo Renseignements?></a></li>
-      <li class="liste"><a class="liste" href="groupes.php?key=farfadets"> <?php echo Farfadets ?></a></li>
-      <li class="liste"><a class="liste" href="groupes.php?key=louveteaux"> <?php echo Louveteaux ?></a></li>
-      <li class="liste"><a class="liste" href="groupes.php?key=scouts"> <?php echo Scouts ?></a></li>
-      <li class="liste"><a class="liste" href="groupes.php?key=pionniers"> <?php echo Pionniers ?></a></li>
-      <li class="liste"><a class="liste" href="groupes.php?key=compagnons"> <?php echo Compagnons ?></a></li>
+      <li class="menuac" class="liste" ><a class="menuac" class="liste"  href="index.php"> <?php echo Accueil?></a></li>
+      <li class="menuren" class="liste" ><a class="menuren" class="liste"  href="renseignement.php"> <?php echo Renseignements?></a></li>
+      <li class="menufar" class="liste" ><a class="menufar" class="liste"  href="groupes.php?key=farfadets"> <?php echo Farfadets ?></a></li>
+      <li class="menulou" class="liste" ><a class="menulou" class="liste"  href="groupes.php?key=louveteaux"> <?php echo Louveteaux ?></a></li>
+      <li class="menusco" class="liste" ><a class="menusco" class="liste"  href="groupes.php?key=scouts"> <?php echo Scouts ?></a></li>
+      <li class="menupio" class="liste" ><a class="menupio" class="liste"  href="groupes.php?key=pionniers"> <?php echo Pionniers ?></a></li>
+      <li class="menucom" class="liste"  ><a class="menucom" class="liste"  href="groupes.php?key=compagnons"> <?php echo Compagnons ?></a></li>
     </ul>
   </div>
+  <!--balise choix langue-->
   <ul class="langue">
         <?php
       if (isset($_SESSION['langue'])) {
@@ -56,14 +57,15 @@ if (isset($_GET['key'])){
             <li id="bottom2"><a href="<?php echo $url ?>?langue=en">EN</a></li>
         </ul>
   </ul>
+
   <div class="logo">
-    <?php if ($index=="all") {?>
+    <?php if ($index=="all") {?> <!--logos renseignement accueil-->
       <a href="articles.php?key=all"><img src="images/logo_accueil/article.svg"/></a>
       <a href="calendrier.php?key=all"><img src="images/logo_accueil/calendrier.svg"/></a>
       <a href="contact.php?key=all"><img src="images/logo_accueil/contact.svg"/></a>
       <a href="photos.php?key=all"><img src="images/logo_accueil/photo.svg"/></a>
       <?php
-    }else { ?>
+    }else { ?> <!--logos autres pages rappel fct du haut-->
       <a href="articles.php?key=all"><img src='images/<?php echo $index; ?>/article.svg'/></a>
       <a href="calendrier.php?key=all"><img src='images/<?php echo $index; ?>/calendrier.svg'/></a>
       <a href="contact.php?key=all"><img src='images/<?php echo $index; ?>/contact.svg'/></a>
