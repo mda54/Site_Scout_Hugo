@@ -26,8 +26,21 @@
   ?>
   <h2><a href='photos.php?key=<?php echo  $index ?>'><?php echo More ?></a></h2>
 </div>
-<div class="Calendrier">
-  <h1><?php Calendrier ?></h1>
+<div class="Article"/>
+  <h1><?php echo "Article"; ?></h1>
+  <?php
+  include('fonction/get_articleByCategorie.php');
+  $article=get_articleByCategorie($index);
+  foreach ($article as $key) {?>
+    <h3><?php echo $key['id']; ?></h3></br>
+    <h4><?php echo $key['contenue']; ?></h4>
+    <?php 
+  }
+  ?>
 </div>
+<div class="Calendrier">
+  <h1><?php echo Calendrier ?></h1>
+</div>
+
 
 </html>

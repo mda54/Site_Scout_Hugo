@@ -11,7 +11,7 @@
   $categorie= array("compagnons","farfadets","louveteaux","pionniers","scouts");
   foreach ($categorie as $element) {?>
     <h3><?php echo ucfirst($element); ?></h3>
-    <img src='images/photo/<?php echo $element."/contact.jpg" ?>'/>
+    <img src='images/<?php echo $element."/chef.jpg" ?>'/>
 <?php
   }
   ?>
