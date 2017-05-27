@@ -1,5 +1,8 @@
 <?php
-session_start();
+if (isset($_SESSION['langue'])or isset($_SESSION['passe']) or isset($_SESSION['mail'])){
+}else{
+  session_start();
+}
 if (!isset($_SESSION['langue']) and isset($_GET['langue'])) {
   $_SESSION['langue']=$_GET['langue'];
 }

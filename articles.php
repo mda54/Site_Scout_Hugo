@@ -5,9 +5,15 @@
 </head>
 <?php include("entete.php"); ?>
 </br>
+<?php
+  $categorie= array("compagnons","farfadets","louveteaux","pionniers","scouts");
+  foreach ($categorie as $key) {
+    ?>
+    <h2><?php echo $categorie; ?></h2></br
 
-
-
+    <?php
+  }
+ ?>
 </body>
 
 </html>
