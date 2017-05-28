@@ -37,8 +37,8 @@ ul.liste
 
 li.liste, .liste a
 {
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding-top: 13%;
+  padding-bottom:13%;
   padding-left:4%;
   padding-right: 4%;
   color: grey;
@@ -120,8 +120,11 @@ a.menucom:hover
   margin: 0;
   padding: 0.25em ;
   text-align: center;
+  color: white;
 }
-
+.choix *{
+  padding: 0.23em;;
+}
 .langue a
 {
     text-decoration: none;
@@ -132,7 +135,6 @@ a.menucom:hover
 {
       background-color: rgba(25,25,25,0.7);
 }
-
 .choix
 {
     display: none;
@@ -141,7 +143,6 @@ a.menucom:hover
     padding: 0;
     margin: 0;
 }
-
 .langue:hover .choix
 {
     display: block;
@@ -183,6 +184,8 @@ div.logo
 
   li.liste, .liste a
   {
+    padding-top: 20%;
+    padding-bottom: 20%;
     padding-right:1.5vh;
     padding-left:1.5vh;
     color: grey;
