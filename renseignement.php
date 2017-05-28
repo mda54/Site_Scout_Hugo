@@ -1,7 +1,4 @@
 <?php
-function envoi_mail($to,$objet,$message,$headers){
-  mail($to,$objet,$message,$headers);
-}
 if (isset($_POST['formulaire'])) {
   if ($_POST['formulaire']=="farfadets") {
   	$to="ronde.saintfiacre@gmail.com";
@@ -26,10 +23,13 @@ if (isset($_POST['formulaire'])) {
 <head>
   <link rel="stylesheet" href="css/renseignement.css" type="text/css" />
 </head>
+<body>
 <?php include("entete.php"); ?>
 <div class="description">
   <h1><?php echo Renseignements_generaux; ?></h1>
 </div>
+<div class="page">
+<!--Zone mail-->
 <form method=post action="renseignement.php">
   <fieldset class="formulaire">
     <legend><?php echo Envoi_mail; ?></legend>
@@ -51,6 +51,7 @@ if (isset($_POST['formulaire'])) {
       <input class="button" type=submit value='<?php echo Envoyer ?>'>
   </fieldset>
 </form>
+</body>
 
 
 </html>
