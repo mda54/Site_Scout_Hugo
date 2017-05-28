@@ -1,9 +1,12 @@
 <html>
+<?php include("entete.php"); ?>
 <head>
   <link rel="stylesheet" href="css/photos.css" type="text/css" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="js/fancyBox/source/jquery.fancybox.pack.js"></script>
 </head>
-<?php include("entete.php"); ?>
 </br>
 <h1> <?php
 if ($index!="all") {
@@ -23,7 +26,7 @@ if ($index!="all") {
     $list=array_map("utf8_encode",scandir('images/photo/'.$index));
     array_shift($list);array_shift($list);
     foreach ($list as $element) {?>
-    <img src='images/photo/<?php echo $index."/".$element ?>'/>
+    <a class="fancybox" rel='<?php echo $index ?>' href='images/photo/<?php echo $index."/".$element ?>'><img src='images/photo/<?php echo $index."/".$element ?>'/></a>
     <?php
     $x=$x+1;
     if ($x==3){$x=0;?></br><?php }
@@ -44,7 +47,7 @@ if ($index!="all") {
     </br>
       <?php
       foreach ($list as $element) {?>
-        <img src='images/photo/<?php echo $key."/".$element ?>'/>
+        <a class="fancybox" rel='<?php echo $key ?>' href='images/photo/<?php echo $key."/".$element ?>'><img src='images/photo/<?php echo $key."/".$element ?>'/></a>
         <?php
         $x=$x+1;
         if ($x==3){$x=0;?></br><?php }
@@ -57,6 +60,10 @@ if ($index!="all") {
   }
   ?>
 </div>
+<script type="text/javascript">
+$(document).ready(function() {
+$(".fancybox").fancybox();
+});
+</script>
 </body>
-
 </html>
