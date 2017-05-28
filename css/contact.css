@@ -1,0 +1,12 @@
+.description,.photo h3 {
+  text-align: center;
+  color: white;
+  float: right;
+  margin-right: 38%;
+}
+.photo img {
+  float: right;
+  height: auto;
+  width: 40%;
+  margin-right: 20%;
+}

@@ -27,19 +27,31 @@ ul.liste
   list-style-type: none;
 }
 
-li.liste, a 
+li.liste, a
 {
-  padding: 4vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  padding-left:4%;
+  padding-right: 4%;
   color: grey;
   display: block;
 
 }
-
-a.liste, a.menuac, a.menuren, a.menufar, a.menulou, a.menusco, a.menupio, a.menucom
-{
+a.menucom{
+  padding-right: 0em;
+  padding-left: 0;
+  width: 90%;
   margin: 0;
   text-decoration: none;
-  padding-left: 10px;
+}
+
+a.liste, a.menuac, a.menuren, a.menufar, a.menulou, a.menusco, a.menupio,a.menucom
+{
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+  text-decoration: none;
 }
 
 a.menuac:hover
@@ -79,7 +91,7 @@ a.menucom:hover
   border-color: #1a3a26;
 }
 /*mise en page menu langue*/
-.langue 
+.langue
 {
   color: white;
   list-style: none;
@@ -90,7 +102,7 @@ a.menucom:hover
   top: 0.5%;
 }
 
-#none 
+#none
 {
     visibility: hidden;
 }
@@ -102,7 +114,7 @@ a.menucom:hover
   text-align: center;
 }
 
-.langue a 
+.langue a
 {
     text-decoration: none;
     text-transform : uppercase;
@@ -113,7 +125,7 @@ a.menucom:hover
       background-color: rgba(25,25,25,0.7);
 }
 
-.choix 
+.choix
 {
     display: none;
     position: absolute;
@@ -122,7 +134,7 @@ a.menucom:hover
     margin: 0;
 }
 
-.langue:hover .choix 
+.langue:hover .choix
 {
     display: block;
     list-style: none;
