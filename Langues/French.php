@@ -21,5 +21,6 @@ if (!defined('Envoi_mail')){define("Envoi_mail", "Envoi de mail");}
 if (!defined('Indiquer_mail')){define("Indiquer_mail", "Indiquer votre adresse mail:");}
 if (!defined('Ecrire_message')){define("Ecrire_message", "Ecrivez votre message");}
 if (!defined('Envoyer')){define("Envoyer", "Envoyer");}
+if (!defined('Plus')){define("Plus", "Les plus");}
 
 ?>

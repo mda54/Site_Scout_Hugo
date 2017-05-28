@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<!--test url quel groupe est sélectionné-->
 <?php
 if (isset($_GET['key'])){
   if ($_GET['key']=="farfadets") {$index="farfadets";}
@@ -13,17 +15,23 @@ if ($index=="all") {
 ?>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Groupes-Scouts Saint-Fiacre Pulnoy</title>
     <link rel="stylesheet" href="css/groupes.css" type="text/css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/fancyBox/source/jquery.fancybox.pack.js"></script>
   </head>
+
+  <body>
   <?php
   include("entete.php");
   ?>
+
   <div class="description">
     <h1><?php echo Renseignements_generaux." ".ucfirst($index) ?></h1>
   </div>
+
   <div class="photo">
     <h1><?php echo Quelques_photos ?></h1>
     <?php
@@ -44,29 +52,33 @@ if ($index=="all") {
     ?>
     <h2><a href='photos.php?key=<?php echo  $index ?>'><?php echo More ?></a></h2>
   </div>
+
   <div class="article"/>
     <h1><?php echo "Article"; ?></h1>
     <?php
     include('fonction/get_articleByCategorie.php');
     $article=get_articleByCategorie($index);
     foreach ($article as $key) {?>
-      <h3><?php echo "Article N°".$key['id']; ?></h3></br>
+      <h3><?php echo "Article N°".$key['id']; ?></h3><br>
       <h4><?php echo $key['contenue']; ?></h4>
       <?php
     }
     ?>
   </div>
+
   <!--calendrier-->
   <div class="iframe">
-  	<fieldset class="ssiframe">
-  		<legend>Calendrier</legend>
-  			<iframe src="https://calendar.google.com/calendar/embed?showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=saintfiacre.pulnoy%40gmail.com&amp;color=%23333333&amp;src=o87a1o1eqjiv167tm8g152po9s%40group.calendar.google.com&amp;color=%23853104&amp;src=vjo6gs4nmah3hh1im7cncv471c%40group.calendar.google.com&amp;color=%23711616&amp;src=bo0mhpvkpv9v3lt8uv42us0d48%40group.calendar.google.com&amp;color=%23182C57&amp;src=e_2_fr%23weeknum%40group.v.calendar.google.com&amp;color=%238C500B&amp;ctz=Europe%2FParis" style="border-width:0" width="700" height="500" frameborder="0" scrolling="no"></iframe>
-  	</fieldset>
+    <fieldset class="ssiframe">
+      <legend>Calendrier</legend>
+        <iframe src="https://calendar.google.com/calendar/embed?showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=saintfiacre.pulnoy%40gmail.com&amp;color=%23333333&amp;src=o87a1o1eqjiv167tm8g152po9s%40group.calendar.google.com&amp;color=%23853104&amp;src=vjo6gs4nmah3hh1im7cncv471c%40group.calendar.google.com&amp;color=%23711616&amp;src=bo0mhpvkpv9v3lt8uv42us0d48%40group.calendar.google.com&amp;color=%23182C57&amp;src=e_2_fr%23weeknum%40group.v.calendar.google.com&amp;color=%238C500B&amp;ctz=Europe%2FParis" style="border-width:0" width="700" height="500" frameborder="0" scrolling="no"></iframe>
+    </fieldset>
   </div>
+  
   <script type="text/javascript">
     $(document).ready(function() {
     $(".fancybox").fancybox();
     });
   </script>
+</body>
 </html>
 <?php } ?>

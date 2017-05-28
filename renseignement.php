@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 if (isset($_POST['formulaire'])) {
   if ($_POST['formulaire']=="farfadets") {
@@ -21,13 +22,18 @@ if (isset($_POST['formulaire'])) {
 ?>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Renseignements-Scouts Saint-Fiacre Pulnoy</title>
     <link rel="stylesheet" href="css/renseignement.css" type="text/css" />
   </head>
+
   <body>
     <?php include("entete.php"); ?>
+
     <div class="description">
       <h1><?php echo Renseignements_generaux; ?></h1>
     </div>
+
     <div class="page">
   <!--Zone mail-->
       <form method=post action="renseignement.php">
@@ -45,13 +51,19 @@ if (isset($_POST['formulaire'])) {
             <input type="radio" name="formulaire" value="compagnons"/><label for="compagnons">Compagnons</label>
             <input type="radio" name="formulaire" value="autre"/><label for="autre">Autre</label>
           </p>
-          <label><?php echo Indiquer_mail; ?></label></br>
-          <input class="text" name="adresse" type="mail" size=30></br>
-              <label><?php echo Ecrire_message; ?></label></br>
-              <textarea class="text" id="zonemail" name="zonetext"></textarea></br>
+
+          <label><?php echo Indiquer_mail; ?></label><br>
+
+          <input class="text" name="adresse" type="mail" size=30><br>
+            <label><?php echo Ecrire_message; ?></label><br>
+            <textarea class="text" id="zonemail" name="zonetext"></textarea><br>
+
           <input class="button" type=submit value='<?php echo Envoyer ?>'>
+
         </fieldset>
       </form>
     </div>
+
   </body>
+
 </html>

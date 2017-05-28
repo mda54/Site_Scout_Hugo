@@ -72,6 +72,11 @@ if (isset($_GET['key'])){
 
              <?php echo Compagnons ?>
            </a></li>
+
+           <li class="menucom liste"  ><a class="menucom liste"  href="plus.php"> 
+
+             <?php echo Plus ?>
+           </a></li>
           </ul>
       </div>
       <div class="page">
@@ -106,7 +111,7 @@ if (isset($_GET['key'])){
             <a href="contact.php?key=all"><img src="images/logo_accueil/contact.svg" alt="contact"/></a>
             <a href="photos.php?key=all"><img src="images/logo_accueil/photo.svg" alt="photo"/></a>
             <?php
-          }else { ?> logos autres pages rappel fct du haut
+          }else { ?> <!--logos autres pages rappel fct du haut-->
 
             <a href='articles.php?key=<?php echo $index ?>'><img src='images/<?php echo $index; ?>/article.svg' alt="article"/></a>
             <a href='calendrier.php?key=<?php echo $index ?>'><img src='images/<?php echo $index; ?>/calendrier.svg' alt="calendrier"/></a>
@@ -118,3 +123,4 @@ if (isset($_GET['key'])){
     </div>
     </body>
 </html>
+
