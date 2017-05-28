@@ -10,11 +10,11 @@
 
 </br>
 <div class="Connexion">
-<h1 style="text-align: center;">ACCES BACK OFFICE</h1>
+<h1>ACCES BACK OFFICE</h1>
 <form method="post" action="admin.php">
-    <input type="email" name="mail" placeholder="Adresse Mail" /></br>
-    <input type="password" name="passe" placeholder="Mot de Passe" /></br>
-    <input type="submit" value="CONNEXION" />
+    <input id="connexion" type="email" name="mail" placeholder="Mail" /></br>
+    <input id="connexion" type="password" name="passe" placeholder="Mot de Passe" /></br>
+    <input class="button" type="submit" value="Connexion" />
     <?php if(isset($erreur)and $erreur!=''){?>
       <h4><?php echo "Vous n'êtes pas Admin" ?></h4>
       <?php

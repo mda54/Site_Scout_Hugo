@@ -80,7 +80,9 @@ if ($erreur==false) {
 </head>
 </br>
 </body>
+<div class="modif">
 <h1>Bienvenue dans la partie administrateur</h1></br>
+<div class="photo">
 <h1>Photo</h1>
 <h3>Ajouter une photo(JPG,JPEG ou PNG| max 15 Ko)</h3>
 <form action='admin.php' method="post" enctype="multipart/form-data">
@@ -102,8 +104,38 @@ if (isset($erreur_photo)) {
 }
  ?>
 </br>
-  <input type="submit" value="Ajouter" />
+  <input class="button" type="submit" value="Ajouter" />
 </form>
+</div>
+<div class="admin">
+<h1>Compte administrateur</h1>
+<h3>Ajouter un compte administrateur</h3>
+<form action='admin.php' method="post">
+  <input type="email" name="Admin_mail" placeholder="Adresse mail" />
+  </br>
+  <input type="password" name="Admin_passe1" placeholder="Mot de passe" />
+  </br>
+  <input type="password" name="Admin_passe2" placeholder="Mot de passe" />
+  </br>
+  <input class="button" type="submit" value="Ajouter" />
+  </br>
+</form>
+<?php if(isset($erreur_adm)){?>
+<a><?php echo $erreur_adm; ?></a>
+<?php } ?>
+<h3>Supprimer un compte administrateur</h3>
+<form action='admin.php' method="post">
+  <input type="email" name="Admin_mail1" placeholder="Adresse mail" />
+  </br>
+  <input type="email" name="Admin_mail2" placeholder="Adresse mail" />
+  </br>
+  <input class="button" type="submit" value="Supprimer" />
+</form>
+<?php if (isset($erreur_admin)){?>
+  <a><?php echo $erreur_admin;?></a><?php
+} ?>
+</div>
+<div class="article">
 <h1>Article</h1>
 <h3>Ajouter un article</h3>
 <form action='admin.php' method="post">
@@ -121,9 +153,9 @@ if (isset($erreur_photo)) {
   <option value='anglais'>Anglais</option>
 </select>
 </br>
-<input type="texte" rows="5" cols="100" name="Article_contenu"/>
+<textarea id="text" type="texte" rows="5" cols="100" name="Article_contenu"></textarea>
 </br>
-  <input type="submit" value="Ajouter" />
+  <input class="button" type="submit" value="Ajouter" />
 </form>
 <h3>Supprimer un article</h3>
 <form action='admin.php' method="post">
@@ -138,35 +170,11 @@ foreach ($listID as $id) {?>
  ?>
 </select>
 </br>
-  <input type="submit" value="Supprimer" />
+  <input class="button" type="submit" value="Supprimer" />
   </br>
 </form>
-<h1>Compte administrateur</h1>
-<h3>Ajouter un compte administrateur</h3>
-<form action='admin.php' method="post">
-  <input type="email" name="Admin_mail" placeholder="Adresse mail" />
-  </br>
-  <input type="password" name="Admin_passe1" placeholder="Mot de passe" />
-  </br>
-  <input type="password" name="Admin_passe2" placeholder="Mot de passe" />
-  </br>
-  <input type="submit" value="Ajouter" />
-  </br>
-</form>
-<?php if(isset($erreur_adm)){?>
-<a><?php echo $erreur_adm; ?></a>
-<?php } ?>
-<h3>Supprimer un compte administrateur</h3>
-<form action='admin.php' method="post">
-  <input type="email" name="Admin_mail1" placeholder="Adresse mail" />
-  </br>
-  <input type="email" name="Admin_mail2" placeholder="Adresse mail" />
-  </br>
-  <input type="submit" value="Supprimer" />
-</form>
-<?php if (isset($erreur_admin)){?>
-  <a><?php echo $erreur_admin;?></a><?php
-} ?>
+</div>
+<div class="accueil">
 <h1>Message d'accueil</h1>
 <h3>Modifier le message d'accueil francais</h3>
 <form action='admin.php' method="post">
@@ -176,18 +184,22 @@ foreach ($listID as $id) {?>
   $text_fr=get_accueil("francais");
   $text_en=get_accueil("anglais");
   ?>
-  <input type="text" name="Accueil_text_fr" rows="5" cols="100" value='<?php echo $text_fr ?>'/>
+  <textarea id="text" class="text" type="text" name="Accueil_text_fr" rows="5" cols="100" ><?php echo $text_fr ?></textarea>
 </br>
-  <input type="submit" value="Modifier" />
+  <input class="button" type="submit" value="Modifier" />
 </form>
 <h3>Modifier le message d'accueil anglais</h3>
 <form action='admin.php' method="post">
 </br>
-  <input type="text" name="Accueil_text_en" rows="5" cols="100" value='<?php echo $text_en ?>' />
+  <textarea id="text" class="text" type="text" name="Accueil_text_en" rows="5" cols="100"><?php echo $text_en ?>' </textarea>
 </br>
-  <input type="submit" value="Modifier" />
+  <input class="button" type="submit" value="Modifier" />
 </form>
-<h3><a href="index.php?deco=true">Déconnexion</h3>
+</div>
+<div class="deco">
+<h3><a  href="index.php?deco=true">Déconnexion</a></h3>
+</div>
+</div>
 </body>
 </html>
 <?php } ?>
