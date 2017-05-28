@@ -5,21 +5,28 @@
 </head>
 <?php include("entete.php"); ?>
 </br>
+<h1>Article</h1>
+</div class="post">
 <?php
   include('fonction/get_articleByCategorie.php');
   $categorie= array("compagnons","farfadets","louveteaux","pionniers","scouts");
   foreach ($categorie as $key) {
     ?>
-    <h2><?php echo $key; ?></h2></br>
+    <div class="<?php echo $key?>">
+    <h2><?php echo ucfirst($key); ?></h2></br>
     <?php
     $list=get_articleByCategorie($key);
     foreach ($list as $element) {?>
-      <h3><?php echo $element['id']; ?></h3></br>
-      <h4><?php echo $element['contenue']; ?></h4>
+      <div class="id"><h3>Post n° <?php echo $element['id']; ?></h3></div></br>
+      <div class="contenue"><h4><?php echo $element['contenue']; ?></h4></div>
       <?php
     }
+    ?>
+  </div>
+  <?php
   }
  ?>
+ </div>
 </body>
 
 </html>

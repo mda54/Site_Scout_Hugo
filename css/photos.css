@@ -1,0 +1,18 @@
+img{
+  height: 13em;
+  width: 13em;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+.compagnons,.farfadets,.louveteaux,.pionniers,.scouts{
+  float: right;
+  text-align: center;
+  color: White;
+  width: 75%;
+
+}
+.compagnons img,.farfadets img,.louveteaux img,.pionniers img,.scouts img{
+padding: 0.7em;
+}

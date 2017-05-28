@@ -17,7 +17,6 @@ if (isset($_POST['formulaire'])) {
   	$to="saintfiacre.pulnoy@gmail.com";
   }
   if (isset($_POST['adresse']) and isset($_POST['zonetext'])) {
-    $to="manond@live.fr";
       mail($to,"Renseignements pour :".$_POST['adresse'],$_POST['zonetext'],"From: ".$_POST['adresse']." \r\n\r\n");
       $erreur="Mail envoyé";
   }
@@ -29,11 +28,11 @@ if (isset($_POST['formulaire'])) {
 </head>
 <?php include("entete.php"); ?>
 <div class="description">
-  <h1>Renseignements généraux</h1>
+  <h1><?php echo Renseignements_generaux; ?></h1>
 </div>
 <form method=post action="renseignement.php">
   <fieldset class="formulaire">
-    <legend>Envoi de mail</legend>
+    <legend><?php echo Envoi_mail; ?></legend>
     <?php if (isset($erreur)) {
       echo $erreur;
     } ?>
@@ -45,14 +44,11 @@ if (isset($_POST['formulaire'])) {
         <input type="radio" name="formulaire" value="compagnons"/><label for="compagnons">Compagnons</label>
         <input type="radio" name="formulaire" value="autre"/><label for="autre">Autre</label>
       </p>
-
-      <label>Indiquer votre adresse mail:</label></br>
+      <label><?php echo Indiquer_mail; ?></label></br>
       <input class="text" name="adresse" type="mail" size=30></br>
-
-          <label>Ecrivez votre message:</label></br>
+          <label><?php echo Ecrire_message; ?></label></br>
           <textarea class="text" id="zonemail" name="zonetext"></textarea></br>
-
-      <input class="button" type=submit value=Envoyer>
+      <input class="button" type=submit value='<?php echo Envoyer ?>'>
   </fieldset>
 </form>
 
