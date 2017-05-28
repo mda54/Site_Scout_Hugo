@@ -1,0 +1,13 @@
+fieldset
+{
+	text-align: center;
+	margin-left: 2em;
+}
+fieldset.ssiframe
+{
+	color: white;
+	border: solid 2px white;
+	width: 700px;
+	height: auto;
+	text-align: center;
+}

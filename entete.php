@@ -34,6 +34,7 @@ if (isset($_GET['key'])){
 </head>
 <body class="entete" background="images/Fond.jpg">
   <div class="menu">
+    <img src="images/entete.svg" alt="logo"/>
     <ul class="liste">
       <li class="menuac" class="liste" ><a class="menuac" class="liste"  href="index.php"> <?php echo Accueil?></a></li>
       <li class="menuren" class="liste" ><a class="menuren" class="liste"  href="renseignement.php"> <?php echo Renseignements?></a></li>
@@ -66,16 +67,16 @@ if (isset($_GET['key'])){
 
   <div class="logo">
     <?php if ($index=="all") {?> <!--logos renseignement accueil-->
-      <a href="articles.php?key=all"><img src="images/logo_accueil/article.svg"/></a>
-      <a href="calendrier.php?key=all"><img src="images/logo_accueil/calendrier.svg"/></a>
-      <a href="contact.php?key=all"><img src="images/logo_accueil/contact.svg"/></a>
-      <a href="photos.php?key=all"><img src="images/logo_accueil/photo.svg"/></a>
+      <a href="articles.php?key=all"><img src="images/logo_accueil/article.svg" alt="article"/></a>
+      <a href="calendrier.php?key=all"><img src="images/logo_accueil/calendrier.svg" alt="calendrier"/></a>
+      <a href="contact.php?key=all"><img src="images/logo_accueil/contact.svg" alt="contact"/></a>
+      <a href="photos.php?key=all"><img src="images/logo_accueil/photo.svg" alt="photo"/></a>
       <?php
     }else { ?> <!--logos autres pages rappel fct du haut-->
-      <a href="articles.php?key=all"><img src='images/<?php echo $index; ?>/article.svg'/></a>
-      <a href="calendrier.php?key=all"><img src='images/<?php echo $index; ?>/calendrier.svg'/></a>
-      <a href="contact.php?key=all"><img src='images/<?php echo $index; ?>/contact.svg'/></a>
-      <a href="photos.php?key=all"><img src='images/<?php echo $index; ?>/photo.svg'/></a>
+      <a href="articles.php?key=all"><img src='images/<?php echo $index; ?>/article.svg'alt="article"/></a>
+      <a href="calendrier.php?key=all"><img src='images/<?php echo $index; ?>/calendrier.svg' alt="calendrier"/></a>
+      <a href="contact.php?key=all"><img src='images/<?php echo $index; ?>/contact.svg' alt="contact"/></a>
+      <a href="photos.php?key=all"><img src='images/<?php echo $index; ?>/photo.svg' alt="photo"/></a>
       <?php } ?>
     </br>
   </div>
