@@ -45,7 +45,7 @@ if (isset($_GET['key'])){
                <?php echo Renseignements?>
              </a></li>
 
-            <li class="menufar liste" ><a class="menufar liste"  href="groupes.php?key=farfadets"> 
+            <li class="menufar liste" ><a class="menufar liste"  href="groupes.php?key=farfadets">
                <?php echo Farfadets ?>
              </a></li>
 
@@ -66,7 +66,6 @@ if (isset($_GET['key'])){
            </a></li>
 
            <li class="menucom liste"  ><a class="menucom liste"  href="plus.php"> 
-
              <?php echo Plus ?>
            </a></li>
           </ul>
@@ -115,4 +114,3 @@ if (isset($_GET['key'])){
     </div>
     </body>
 </html>
-
