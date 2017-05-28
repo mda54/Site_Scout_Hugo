@@ -20,38 +20,38 @@ if (isset($_POST['formulaire'])) {
 }
 ?>
 <html>
-<head>
-  <link rel="stylesheet" href="css/renseignement.css" type="text/css" />
-</head>
-<body>
-<?php include("entete.php"); ?>
-<div class="description">
-  <h1><?php echo Renseignements_generaux; ?></h1>
-</div>
-<div class="page">
-<!--Zone mail-->
-<form method=post action="renseignement.php">
-  <fieldset class="formulaire">
-    <legend><?php echo Envoi_mail; ?></legend>
-    <?php if (isset($erreur)) {
-      echo $erreur;
-    } ?>
-      <p>
-        <input type="radio" name="formulaire" value="farfadets"/><label for="farfadets">Farfadets</label>
-        <input type="radio" name="formulaire" value="louveteaux"/><label for="louveteaux">Louveteaux</label>
-        <input type="radio" name="formulaire" value="scouts"/><label for="scouts">Scouts</label>
-        <input type="radio" name="formulaire"value="pionniers"/><label for="pionniers">Pionniers</label>
-        <input type="radio" name="formulaire" value="compagnons"/><label for="compagnons">Compagnons</label>
-        <input type="radio" name="formulaire" value="autre"/><label for="autre">Autre</label>
-      </p>
-      <label><?php echo Indiquer_mail; ?></label></br>
-      <input class="text" name="adresse" type="mail" size=30></br>
-          <label><?php echo Ecrire_message; ?></label></br>
-          <textarea class="text" id="zonemail" name="zonetext"></textarea></br>
-      <input class="button" type=submit value='<?php echo Envoyer ?>'>
-  </fieldset>
-</form>
-</body>
-
-
+  <head>
+    <link rel="stylesheet" href="css/renseignement.css" type="text/css" />
+  </head>
+  <body>
+    <?php include("entete.php"); ?>
+    <div class="description">
+      <h1><?php echo Renseignements_generaux; ?></h1>
+    </div>
+    <div class="page">
+  <!--Zone mail-->
+      <form method=post action="renseignement.php">
+        <fieldset class="formulaire">
+          <legend><?php echo Envoi_mail; ?></legend>
+          <?php
+          if (isset($erreur)){
+            echo $erreur;
+          } ?>
+          <p>
+            <input type="radio" name="formulaire" value="farfadets"/><label for="farfadets">Farfadets</label>
+            <input type="radio" name="formulaire" value="louveteaux"/><label for="louveteaux">Louveteaux</label>
+            <input type="radio" name="formulaire" value="scouts"/><label for="scouts">Scouts</label>
+            <input type="radio" name="formulaire"value="pionniers"/><label for="pionniers">Pionniers</label>
+            <input type="radio" name="formulaire" value="compagnons"/><label for="compagnons">Compagnons</label>
+            <input type="radio" name="formulaire" value="autre"/><label for="autre">Autre</label>
+          </p>
+          <label><?php echo Indiquer_mail; ?></label></br>
+          <input class="text" name="adresse" type="mail" size=30></br>
+              <label><?php echo Ecrire_message; ?></label></br>
+              <textarea class="text" id="zonemail" name="zonetext"></textarea></br>
+          <input class="button" type=submit value='<?php echo Envoyer ?>'>
+        </fieldset>
+      </form>
+    </div>
+  </body>
 </html>
