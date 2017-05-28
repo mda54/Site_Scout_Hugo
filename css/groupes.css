@@ -1,0 +1,45 @@
+.description,.article,.photo{
+  float: right;
+  text-align: center;
+  color: White;
+  width: 75%;
+  border: 1.5px solid white;
+  background-color: rgba(174, 181, 173, 0.6);
+  text-align: center;
+  color: white;
+  margin-bottom: 2em;
+  margin-right: 2%;
+  margin-top: 2em;
+}
+.photo a{
+  float: right;
+  color: black;
+  text-decoration: none;
+}
+.photo img{
+  height: 15em;
+  width: auto;
+}
+.article h3{
+  float: left;
+}
+.article h4{
+  float: right;
+}
+.iframe{
+  float: right;
+  margin-right: 15%;
+}
+fieldset
+{
+	text-align: center;
+	margin-left: 2em;
+}
+fieldset.ssiframe
+{
+	color: white;
+	border: solid 2px white;
+	width: 700px;
+	height: auto;
+	text-align: center;
+}

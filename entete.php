@@ -73,10 +73,10 @@ if (isset($_GET['key'])){
       <a href="photos.php?key=all"><img src="images/logo_accueil/photo.svg" alt="photo"/></a>
       <?php
     }else { ?> <!--logos autres pages rappel fct du haut-->
-      <a href="articles.php?key=all"><img src='images/<?php echo $index; ?>/article.svg'alt="article"/></a>
-      <a href="calendrier.php?key=all"><img src='images/<?php echo $index; ?>/calendrier.svg' alt="calendrier"/></a>
-      <a href="contact.php?key=all"><img src='images/<?php echo $index; ?>/contact.svg' alt="contact"/></a>
-      <a href="photos.php?key=all"><img src='images/<?php echo $index; ?>/photo.svg' alt="photo"/></a>
+      <a href='articles.php?key=<?php echo $index ?>'><img src='images/<?php echo $index; ?>/article.svg'alt="article"/></a>
+      <a href='calendrier.php?key=<?php echo $index ?>'><img src='images/<?php echo $index; ?>/calendrier.svg' alt="calendrier"/></a>
+      <a href='contact.php?key=<?php echo $index ?>'><img src='images/<?php echo $index; ?>/contact.svg' alt="contact"/></a>
+      <a href='photos.php?key=<?php echo $index ?>'><img src='images/<?php echo $index; ?>/photo.svg' alt="photo"/></a>
       <?php } ?>
     </br>
   </div>
