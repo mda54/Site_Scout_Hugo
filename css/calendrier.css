@@ -10,4 +10,6 @@ fieldset.ssiframe
 	width: 700px;
 	height: auto;
 	text-align: center;
+	margin-left: 33%;
+	background-color: rgba(174, 181, 173, 0.6);
 }
