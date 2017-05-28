@@ -15,11 +15,17 @@
   float: right;
   color: black;
   text-decoration: none;
+  margin-left: 70%;
+  margin-right: 5%;
+  margin-bottom: 2%;
 }
-.fancybox a{
-  height: 15em;
+.fancybox img, a.fancybox{
+  margin: 0;
+  height: 13em;
   width: auto;
   float: left;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
 }
 .article h3{
   float: left;
