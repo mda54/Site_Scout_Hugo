@@ -24,6 +24,7 @@
   height: 13em;
   width: auto;
   float: left;
+  padding: 1%;
   padding-right: 1.5%;
   padding-left: 1.5%;
 }
@@ -41,6 +42,7 @@ fieldset
 {
 	text-align: center;
 	margin-left: 2em;
+  margin-right: 2em;
 }
 fieldset.ssiframe
 {
@@ -49,4 +51,5 @@ fieldset.ssiframe
 	width: 700px;
 	height: auto;
 	text-align: center;
+  padding: 1em;
 }
