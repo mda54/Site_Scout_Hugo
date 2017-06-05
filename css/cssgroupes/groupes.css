@@ -1,0 +1,65 @@
+.description,.article,.photo{
+  display: float;
+  float: right;
+  text-align: center;
+  color: White;
+  width: 75%;
+  border: 1.5px solid white;
+  background-color: rgba(174, 181, 173, 0.6);
+  text-align: center;
+  color: white;
+  margin-bottom: 2em;
+  margin-right: 2%;
+  margin-top: 2em;
+}
+.photo a{
+  /*float: right;*/
+  color: rgb(0, 26, 68);
+  text-decoration: none;
+  margin-left: 70%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+a{
+  font-size: 15px;
+}
+.fancybox img, a.fancybox{
+  margin: 0;
+  height: 13em;
+  width: auto;
+  float: left;
+  padding: 1%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+.article h3{
+  float: left;
+}
+.article h4{
+  float: right;
+}
+.iframe{
+  float: right;
+  margin-right: 15%;
+}
+fieldset
+{
+  text-align: center;
+  margin-left: 2em;
+}
+fieldset.ssiframe
+{
+  color: white;
+  border: solid 2px white;
+  width: 700px;
+  height: auto;
+  text-align: center;
+  margin-left: 33%;
+  background-color: rgba(174, 181, 173, 0.6);
+}
+
+legend
+{
+  font-weight: bold;
+}

@@ -1,0 +1,76 @@
+h1, .formulaire{
+  text-align: center;
+  color: White;
+  width: 75%;
+  border: 1.5px solid white;
+  background-color: rgba(174, 181, 173, 0.6);
+  text-align: center;
+  color: white;
+  margin-bottom: 2em;
+  margin-right: 2%;
+  margin-top: 2.5%;
+  display: float;
+}
+
+h1
+{
+	float: right;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+  font-size: 25px;
+}
+
+.formulaire
+{
+	border: 1.5px solid white;
+	background-color: rgba(174, 181, 173, 0.6);
+	text-align: center;
+	color: white;
+	width: 91%;
+	margin-left: 4%;
+  font-size: 12px;
+}
+
+legend
+{
+	font-weight: bold;
+}
+
+.text
+{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.charte
+{
+	font-style: italic;
+	color: rgb(0, 26, 68);
+}
+.phrasecharte
+{
+	font-style: italic;
+}
+
+.button
+{
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    border-color: rgba(174, 181, 173, 0.6);
+    border-radius: 12px 0 12px 0;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.button:hover
+{
+    background-image:linear-gradient(white, grey);
+    padding: 5px 10px;
+}
+
+#zonemail
+{
+	height: 20em;
+	width: 70%;
+}

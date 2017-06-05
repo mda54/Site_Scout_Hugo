@@ -3,7 +3,11 @@
   <head>
      <meta charset="utf-8">
      <title>Connexion-Scouts Saint-Fiacre Pulnoy</title>
-    <link rel="stylesheet" href="css/connexion.css" type="text/css" />
+        <link rel="stylesheet" media="screen and (min-width: 1024px)and (max-width: 4000px)" href="css/cssconnexion/connexion.css" />
+    <link rel="stylesheet" media="screen and (min-width:980px) and (max-width: 1023px)" href="css/cssconnexion/connexion2.css" />
+    <link rel="stylesheet" media="screen and (min-width:640px) and (max-width: 979px)" href="css/cssconnexion/connexion3.css" />
+    <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/cssconnexion/connexion4.css" />
+
   </head>
   <body>
     <?php

@@ -1,4 +1,10 @@
-<!doctype html>
+  <head>
+    <link rel="stylesheet" media="screen and (min-width: 1024px)and (max-width: 4000px)" href="css/cssadmin/admin.css" />
+    <link rel="stylesheet" media="screen and (min-width:980px) and (max-width: 1023px)" href="css/cssadmin/admin2.css" />
+    <link rel="stylesheet" media="screen and (min-width:640px) and (max-width: 979px)" href="css/cssadmin/admin3.css" />
+    <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/cssadmin/admin4.css" />
+
+  </head>
 <?php
 include_once("fonction/password_maker.php");
 include_once("fonction/password_verify.php");
@@ -84,15 +90,9 @@ if ($erreur==false) {
   $categorie= array("compagnons","farfadets","louveteaux","pionniers","scouts");
 ?>
 
-
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Administrateurs-Scouts Saint-Fiacre Pulnoy</title>
-    <link rel="stylesheet" href="css/admin.css" type="text/css" />
-  </head>
-
-  <br><div class='miseenforme'>
+    <div class="messagetel">Vous en pouvez pas ajouter des éléments sur ce support.</div>
+  <br>
+  <div class='miseenforme'>
   <div class="modif">
     <h1 class="tete">Bienvenue dans la partie administrateur</h1><br>
 
@@ -184,7 +184,7 @@ if ($erreur==false) {
         <h3>Supprimer un article</h3>
 
         <form action='admin.php' method="post">
-          <select name="Article_id"/>
+          <select name="Article_id">
           <option value=''>Selectionner</option>
           <?php
           $listID=get_articleByID();
@@ -234,6 +234,7 @@ if ($erreur==false) {
       </div>
 
   </div>
+</div>
 
 </html>
 <?php } ?>

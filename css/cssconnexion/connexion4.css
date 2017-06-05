@@ -1,0 +1,32 @@
+.Connexion *{
+  color: black;
+  text-align: center;
+}
+
+h1
+{
+  margin-top: 4em;
+  font-size: 20px;
+}
+#connexion
+{
+  width: 15%;
+  padding: 0.5em;
+  margin: 1.5em;
+}
+
+.button
+{
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    border-color: rgba(174, 181, 173, 0.6);
+    border-radius: 12px 0 12px 0;
+    padding: 5px 10px;
+}
+
+.button:hover
+{
+    background-image:linear-gradient(white, grey);
+    padding: 5px 10px;
+}

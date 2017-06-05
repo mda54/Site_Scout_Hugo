@@ -16,9 +16,18 @@ if ($index=="all") {
 <html>
   <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
     <title>Groupes-Scouts Saint-Fiacre Pulnoy</title>
     <link rel="stylesheet" href="css/groupes.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+=======
+    <title>Groupes-Scouts Saint-Fiacre Pulnoy</title> 
+    <link rel="stylesheet" media="screen and (min-width: 1024px)and (max-width: 4000px)" href="css/cssgroupes/groupes.css" />
+    <link rel="stylesheet" media="screen and (min-width:980px) and (max-width: 1023px)" href="css/cssgroupes/groupes2.css" />
+    <link rel="stylesheet" media="screen and (min-width:640px) and (max-width: 979px)" href="css/cssgroupes/groupes3.css" />
+    <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/cssgroupes/groupes4.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+>>>>>>> f33492229a024ff09b4220bd117dc567d69ac32d
     <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/fancyBox/source/jquery.fancybox.pack.js"></script>
   </head>

@@ -4,9 +4,10 @@ h1
 	text-align: center;
 	padding-top: 1%;
 	padding-bottom: 1%;
+	font-size: 20px;
 
 }
-.liens, h1
+.siteautre, h1
 {
 	border: 1.5px solid white;
 	background-color: rgba(174, 181, 173, 0.6);
@@ -18,7 +19,7 @@ h1
   	margin-top: 2%;
   	margin-right: 2%;
 }
-img
+.siteautre img
 {
 	padding: 3%;
 	width: 150px;
