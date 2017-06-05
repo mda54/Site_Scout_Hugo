@@ -24,14 +24,17 @@ if (isset($_POST['formulaire'])) {
   <head>
     <meta charset="utf-8">
     <title>Renseignements-Scouts Saint-Fiacre Pulnoy</title>
-    <link rel="stylesheet" href="css/liens.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 1024px)and (max-width: 4000px)" href="css/cssliens/liens.css" />
+    <link rel="stylesheet" media="screen and (min-width:980px) and (max-width: 1023px)" href="css/cssliens/liens2.css" />
+    <link rel="stylesheet" media="screen and (min-width:640px) and (max-width: 979px)" href="css/cssliens/liens3.css" />
+    <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/cssliens/liens4.css" />
   </head>
 
   <body>
     <?php include("entete.php"); ?>
     <h1>Liens</h1>
 
-    <div class="liens">
+    <div class="siteautre">
     <a href="www.sgdf.fr"><img src="images/lien/sgdf.jpg" alt="Scouts et Guides de France"></a>
 
     <a href="https://www.laboutiqueduscoutisme.com/"><img src="images/lien/laboutiqueduscoutisme.jpg" alt="La boutique du scoutisme"></a>

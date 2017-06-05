@@ -24,7 +24,10 @@ if (isset($_POST['formulaire'])) {
   <head>
     <meta charset="utf-8">
     <title>Renseignements-Scouts Saint-Fiacre Pulnoy</title>
-    <link rel="stylesheet" href="css/renseignement.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 1024px)and (max-width: 4000px)" href="css/cssrenseignement/renseignement.css" />
+    <link rel="stylesheet" media="screen and (min-width:980px) and (max-width: 1023px)" href="css/cssrenseignement/renseignement2.css" />
+    <link rel="stylesheet" media="screen and (min-width:640px) and (max-width: 979px)" href="css/cssrenseignement/renseignement3.css" />
+    <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/cssrenseignement/renseignement4.css" />
   </head>
 
   <body>
@@ -57,7 +60,9 @@ if (isset($_POST['formulaire'])) {
           <input class="text" name="adresse" type="mail" size=30><br>
             <label><?php echo Ecrire_message; ?></label><br>
             <textarea class="text" id="zonemail" name="zonetext"></textarea><br>
-            <p class="phrasecharte"><?php echo Chartemessage; ?><a class="charte" href="#"><?php echo Charte; ?></a><br><p>
+            <p class="phrasecharte"><?php echo Chartemessage; ?><?php echo Charte; ?>
+              <a class="charte" href="chartefr.html" target="conditions" onclick="window.open(this.href,this.target);return false;">Fr</a><em>/</em><a class="charte" href="charteen.html" target="conditions" onclick="window.open(this.href,this.target);return false;">En</a><br>
+            </p>
 
           <input class="button" type=submit value='<?php echo Envoyer ?>'>
 

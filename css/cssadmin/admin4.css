@@ -1,0 +1,10 @@
+.messagetel
+{
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.article, .photo, .accueil, .admin, .tete, .deco
+{
+  display:none;
+}

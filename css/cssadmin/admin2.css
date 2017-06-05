@@ -1,0 +1,117 @@
+.messagetel
+{
+  display: none;
+}
+
+h3
+{
+    font-size: 12px;
+}
+
+h1
+{
+  font-size: 25px;
+}
+
+.article, .photo, .accueil, .admin, .tete{
+text-align: center;
+color: white;
+margin-right: 2%;
+margin-bottom: 2%;
+border: 1.5px solid white;
+background-color: rgba(174, 181, 173, 0.6);
+display: float;
+}
+
+.tete
+{
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  margin-left: 25%;
+  margin-right: 5%;
+}
+
+.button
+{
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    border-color: rgba(174, 181, 173, 0.6);
+    border-radius: 12px 0 12px 0;
+    padding: 5px 10px;
+    margin: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.button:hover
+{
+    background-image:linear-gradient(white, grey);
+    padding: 5px 10px;
+}
+
+select{
+  padding: 0.6em;
+  margin: 1em;
+}
+
+.photo{
+  float: left;
+  text-align: center;
+  margin-left: 30%;
+  height: 60%;
+  width: 30%;
+}
+
+.article
+{
+  float: left;
+  text-align: center;
+  margin-left: 30%;
+  height: 90%;
+  width: 30%;
+}
+
+.accueil
+{
+  float: left;
+  text-align: center;
+  height: 90%;
+  width: 30%;
+}
+
+.admin
+{
+  float: left;
+  text-align: center;
+  height: 60%;
+  width: 30%;
+}
+
+.deco
+{
+
+  margin-left: 48%;
+  padding-left: 2%;
+  padding-right: 2%;
+  float: left;
+  text-align: center;
+  border: 2px solid;
+  background-color: rgb(174, 181, 173);
+  border-color: rgba(174, 181, 173, 0.6);
+  border-radius: 12px 0 12px 0;
+  margin-bottom: 2%;
+}
+
+.deco a
+{
+
+  color: black;
+  text-decoration: none;
+}
+
+#text
+{
+  height: 10em;
+  width: 95%;
+}

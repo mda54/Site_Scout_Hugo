@@ -39,8 +39,8 @@ if (isset($_GET['key'])){
    <body class="entete" background="images/Fond.jpg">
       <header class="menu2">
         <nav class="menu22">
-            <img class="logomenu"src="images/entete.svg" alt="logo"/>
-            <a href="#ssmenu2"> <img class="logomenu2" src="images/logo/bas.svg"></a>
+            <img class="logomenu" src="images/entete.svg" alt="logo"/>
+            <a href="#ssmenu2"> <img class="logomenu2" src="images/logo/bas.svg" alt="logomenu"></a>
         </nav>
       </header>
       <div id="ssmenu3">
@@ -78,7 +78,7 @@ if (isset($_GET['key'])){
                 <a class="petit1" href="responsables.php"><?php echo Responsables ?></a>
                 <a class="petit1" href="credits.php"><?php echo Crédits ?></a>
             </li>
-            <a href="#ssmenu3"> <img class="logomenu3" src="images/logo/haut.svg"></a>
+            <a href="#ssmenu3"> <img class="logomenu3" src="images/logo/haut.svg" alt="logomenu2"></a>
           </ul>
       </div>
     </div>
