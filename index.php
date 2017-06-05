@@ -12,7 +12,7 @@
     <?php include("entete.php"); ?>
     <br>
 
-    <h1><?php echo Bienvenu ?></h1>
+    <h1><?php echo Bienvenue ?></h1>
 
     <div class="corpst">
       <?php include('fonction/get_accueil.php');

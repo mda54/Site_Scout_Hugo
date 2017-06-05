@@ -1,4 +1,4 @@
-<!doctype html> 
+<!doctype html>
 <?php
 include_once("fonction/password_maker.php");
 include_once("fonction/password_verify.php");
@@ -222,7 +222,7 @@ if ($erreur==false) {
 
         <form action='admin.php' method="post">
           <br>
-          <textarea id="text" class="text" type="text" name="Accueil_text_en" rows="5" cols="100"><?php echo $text_en ?>' </textarea>
+          <textarea id="text" class="text" type="text" name="Accueil_text_en" rows="5" cols="100"><?php echo $text_en ?></textarea>
           <br>
           <input class="button" type="submit" value="Modifier" />
         </form>

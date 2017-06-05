@@ -27,5 +27,5 @@ if (!defined('Charte')){define("Charte", "Charte d'envoi");}
 if (!defined('Liens')){define("Liens", "Liens");}
 if (!defined('Responsables')){define("Responsables", "Responsables");}
 if (!defined('Crédits')){define("Crédits", "Crédits");}
-if (!defined('Bienvenu')){define("Bienvenu", "Bienvenu");}
+if (!defined('Bienvenue')){define("Bienvenue", "Bienvenue");}
 ?>

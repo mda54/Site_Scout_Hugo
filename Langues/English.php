@@ -23,9 +23,9 @@ if (!defined('Ecrire_message')){define("Ecrire_message", "Type your message here
 if (!defined('Envoyer')){define("Envoyer", "Send");}
 if (!defined('Plus')){define("Plus", "Other");}
 if (!defined('Chartemessage')){define("Chartemessage", "XXXXXXXXX");}
-if (!defined('Charte')){define("Charte", "XXXXXX");}
-if (!defined('Liens')){define("Liens", "XXXXXXX");}
-if (!defined('Responsables')){define("Responsables", "XXXXXXX");}
-if (!defined('Crédits')){define("Crédits", "XXXXXXX");}
-if (!defined('Bienvenu')){define("Bienvenu", "Welcome");}
+if (!defined('Charte')){define("Charte", "Convention");}
+if (!defined('Liens')){define("Liens", "Usefull links");}
+if (!defined('Responsables')){define("Responsables", "Editorial managers");}
+if (!defined('Crédits')){define("Crédits", "Credit");}
+if (!defined('Bienvenue')){define("Bienvenue", "Welcome");}
 ?>
