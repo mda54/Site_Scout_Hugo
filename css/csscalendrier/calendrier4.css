@@ -1,0 +1,21 @@
+fieldset
+{
+	text-align: center;
+	margin-left: 2em;
+	width: 30px;
+}
+fieldset.ssiframe
+{
+	color: white;
+	border: solid 2px white;
+	width: 30px;
+	height: auto;
+	text-align: center;
+	margin-left: 2%;
+	background-color: rgba(174, 181, 173, 0.6);
+}
+iframe 
+{
+	width: 550px;
+	height: 350px;
+}

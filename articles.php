@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Articles-Scouts Saint-Fiacre Pulnoy</title>
-    <link rel="stylesheet" href="css/articles.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 1024px)and (max-width: 4000px)" href="css/cssarticles/articles.css" />
+    <link rel="stylesheet" media="screen and (min-width:980px) and (max-width: 1023px)" href="css/cssarticles/articles2.css" />
+    <link rel="stylesheet" media="screen and (min-width:640px) and (max-width: 979px)" href="css/cssarticles/articles3.css" />
+    <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/cssarticles/articles4.css" />
   </head>
 
   <?php include("entete.php"); ?>

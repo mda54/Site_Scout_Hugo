@@ -1,0 +1,32 @@
+h1
+{
+	color: white;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 20px;
+
+}
+
+h2
+{
+	margin-bottom: 1%;
+}
+
+.credits, h1
+{
+	border: 1.5px solid white;
+	background-color: rgba(174, 181, 173, 0.6);
+	text-align: center;
+	color: white;
+	margin-left: 2%;
+	margin-bottom: 2em;
+  	margin-top: 2%;
+  	margin-right: 2%;
+}
+
+.credits
+{
+	padding: 1%;
+	font-size: 11px;
+}

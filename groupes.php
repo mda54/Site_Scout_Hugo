@@ -79,6 +79,7 @@ if ($index=="all") {
     $(".fancybox").fancybox();
     });
   </script>
+
 </body>
 </html>
 <?php } ?>

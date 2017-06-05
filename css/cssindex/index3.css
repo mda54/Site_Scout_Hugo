@@ -1,0 +1,26 @@
+h1, .corpst
+{
+float: right;
+  text-align: center;
+  color: White;
+  width: 75%;
+  border: 1.5px solid white;
+  background-color: rgba(174, 181, 173, 0.6);
+  text-align: center;
+  color: white;
+  margin-bottom: 2%;
+  margin-left: 30%;
+  margin-right: 2%;
+  margin-top: 2%;
+  padding: 2%;
+
+}
+
+.corpst
+{
+  font-size: 11px;
+}
+h1
+{
+font-size: 20px;
+}

@@ -57,6 +57,7 @@ if (isset($_POST['formulaire'])) {
           <input class="text" name="adresse" type="mail" size=30><br>
             <label><?php echo Ecrire_message; ?></label><br>
             <textarea class="text" id="zonemail" name="zonetext"></textarea><br>
+            <p class="phrasecharte"><?php echo Chartemessage; ?><a class="charte" href="#"><?php echo Charte; ?></a><br><p>
 
           <input class="button" type=submit value='<?php echo Envoyer ?>'>
 

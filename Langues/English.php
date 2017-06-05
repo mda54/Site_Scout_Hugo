@@ -15,11 +15,17 @@ if (!defined('Compagnons')){define("Compagnons", "Compagnons");}
 if (!defined('Chefs')){define("Chefs", "Chefs");}
 if (!defined('Renseignements_generaux')){define("Renseignements_generaux", "General informations");}
 if (!defined('Quelques_photos')){define("Quelques_photos", "Some photos");}
-if (!defined('More')){define("More", "For more");}
+if (!defined('More')){define("More", "For more...");}
 if (!defined('Calendrier')){define("Calendrier", "Calendar");}
 if (!defined('Envoi_mail')){define("Envoi_mail", "Send an email");}
 if (!defined('Indiquer_mail')){define("Indiquer_mail", "Type your mail adress here");}
 if (!defined('Ecrire_message')){define("Ecrire_message", "Type your message here");}
 if (!defined('Envoyer')){define("Envoyer", "Send");}
 if (!defined('Plus')){define("Plus", "Other");}
+if (!defined('Chartemessage')){define("Chartemessage", "XXXXXXXXX");}
+if (!defined('Charte')){define("Charte", "XXXXXX");}
+if (!defined('Liens')){define("Liens", "XXXXXXX");}
+if (!defined('Responsables')){define("Responsables", "XXXXXXX");}
+if (!defined('Crédits')){define("Crédits", "XXXXXXX");}
+if (!defined('Bienvenu')){define("Bienvenu", "Welcome");}
 ?>

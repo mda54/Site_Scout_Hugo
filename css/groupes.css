@@ -1,4 +1,5 @@
 .description,.article,.photo{
+  display: float;
   float: right;
   text-align: center;
   color: White;
@@ -12,12 +13,16 @@
   margin-top: 2em;
 }
 .photo a{
-  float: right;
-  color: black;
+  /*float: right;*/
+  color: rgb(0, 26, 68);
   text-decoration: none;
   margin-left: 70%;
   margin-right: 5%;
   margin-bottom: 2%;
+}
+
+a{
+  font-size: 15px;
 }
 .fancybox img, a.fancybox{
   margin: 0;
@@ -40,8 +45,9 @@
 }
 fieldset
 {
+  background-color: rgba(174, 181, 173, 0.6);
 	text-align: center;
-	margin-left: 2em;
+	margin-left: 10%;
   margin-right: 2em;
 }
 fieldset.ssiframe
@@ -52,4 +58,8 @@ fieldset.ssiframe
 	height: auto;
 	text-align: center;
   padding: 1em;
+}
+legend
+{
+  font-weight: bold;
 }

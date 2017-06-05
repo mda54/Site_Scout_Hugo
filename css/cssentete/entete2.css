@@ -8,14 +8,14 @@
     font-family: comfortaa, arial;
 }
 
+.menu2, #ssmenu2
+{
+  display: none;
+}
 
 .page
 {
   padding-left: 20%;
-}
-.menu2
-{
-  display: none;
 }
 .menu
 {
@@ -34,8 +34,7 @@
   width: 15%;
 }
 
-.menu img
-{
+.menu img{
   width: 100%;
 }
 
@@ -45,6 +44,7 @@ ul.liste
   list-style-type: none;
   padding-right: 5%;
   width: 50%;
+  padding-left: 4%;
 }
 
 li.liste, .liste a
@@ -53,13 +53,11 @@ li.liste, .liste a
   padding-bottom:10%;
   padding-left:4%;
   padding-right: 4%;
-  color: blue;
+  color: grey;
   display: block;
 
 }
-
-a.menucom
-{
+a.menucom{
   padding-right: 0em;
   padding-left: 0;
   width: 90%;
@@ -69,9 +67,10 @@ a.menucom
 
 a.liste, a.menuac, a.menuren, a.menufar, a.menulou, a.menusco, a.menupio,a.menucom
 {
+  font-size: 12px;
   padding-right: 0;
   padding-left: 0;
-  width: 75%;
+  width: 50%;
   margin-right: 0;
   text-decoration: none;
 }
@@ -136,7 +135,6 @@ a.menucom:hover
   text-align: center;
   color: white;
 }
-
 .choix *
 {
   padding: 0.23em;
@@ -170,7 +168,7 @@ a.menucom:hover
 
 div.logo
 {
-   display : flex;
+  display : flex;
   justify-content : space-around;
 }
 
@@ -185,14 +183,14 @@ div.logo
   padding-left: 3em;
   padding-right: 2em;
   opacity: 1;
-  height: 4em;
+  height: 3em;
 }
 
 .logo img:hover
 {
   width : 50px;
   height: 50px;
-    transition : width 0.5s,height 0.5s;
+  transition : width 0.5s,height 0.5s;
 }
 
 .petit 
@@ -202,11 +200,12 @@ div.logo
   text-decoration: none;
   margin-top: 40%;
   text-align: center;
+  padding-left: 80%;
 }
 
 .petit1
 {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 /*fin mise en page logos*/

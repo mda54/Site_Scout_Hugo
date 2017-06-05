@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Accueil-Scouts Saint-Fiacre Pulnoy</title>
-    <link rel="stylesheet" href="css/entete.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (min-width: 1024px)and (max-width: 4000px)" href="css/cssentete/entete.css" />
+    <link rel="stylesheet" media="screen and (min-width:980px) and (max-width: 1023px)" href="css/cssentete/entete2.css" />
+    <link rel="stylesheet" media="screen and (min-width:640px) and (max-width: 979px)" href="css/cssentete/entete3.css" />
+    <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/cssentete/entete4.css" />
     <script type="text/javascript" src="js/function.js"></script>
   </head>
 <?php
@@ -34,42 +37,90 @@ if (isset($_GET['key'])){
 ?>
 
    <body class="entete" background="images/Fond.jpg">
+      <header class="menu2">
+        <nav class="menu22">
+            <img class="logomenu"src="images/entete.svg" alt="logo"/>
+            <a href="#ssmenu2"> <img class="logomenu2" src="images/logo/bas.svg"></a>
+        </nav>
+      </header>
+      <div id="ssmenu3">
+      <div id="ssmenu2">
+          <ul class="liste">
+              <li class="menuac liste" ><a class="menuac liste"  href="index.php">
+                <?php echo Accueil?>
+              </a></li>
+
+              <li class="menuren liste" ><a class="menuren liste"  href="renseignement.php">
+                 <?php echo Renseignements?>
+               </a></li>
+
+              <li class="menufar liste" ><a class="menufar liste"  href="groupes.php?key=farfadets">
+                 <?php echo Farfadets ?>
+               </a></li>
+
+              <li class="menulou liste" ><a class="menulou liste"  href="groupes.php?key=louveteaux">
+                <?php echo Louveteaux ?>
+              </a></li>
+
+              <li class="menusco liste" ><a class="menusco liste"  href="groupes.php?key=scouts">
+                 <?php echo Scouts ?>
+               </a></li>
+
+              <li class="menupio liste" ><a class="menupio liste"  href="groupes.php?key=pionniers">
+               <?php echo Pionniers ?>
+             </a></li>
+
+              <li class="menucom liste"  ><a class="menucom liste"  href="groupes.php?key=compagnons">
+               <?php echo Compagnons ?>
+             </a></li>
+
+             <li class="petit "><a class="petit1" href="liens.php"><?php echo Liens ?></a>
+                <a class="petit1" href="responsables.php"><?php echo Responsables ?></a>
+                <a class="petit1" href="credits.php"><?php echo Crédits ?></a>
+            </li>
+            <a href="#ssmenu3"> <img class="logomenu3" src="images/logo/haut.svg"></a>
+          </ul>
+      </div>
+    </div>
       <div class="menu">
         <img src="images/entete.svg" alt="logo"/>
           <ul class="liste">
-            <li class="menuac liste" ><a class="menuac liste"  href="index.php">
-              <?php echo Accueil?>
-            </a></li>
+              <li class="menuac liste" ><a class="menuac liste"  href="index.php">
+                <?php echo Accueil?>
+              </a></li>
 
-            <li class="menuren liste" ><a class="menuren liste"  href="renseignement.php">
-               <?php echo Renseignements?>
+              <li class="menuren liste" ><a class="menuren liste"  href="renseignement.php">
+                 <?php echo Renseignements?>
+               </a></li>
+
+              <li class="menufar liste" ><a class="menufar liste"  href="groupes.php?key=farfadets">
+                 <?php echo Farfadets ?>
+               </a></li>
+
+              <li class="menulou liste" ><a class="menulou liste"  href="groupes.php?key=louveteaux">
+                <?php echo Louveteaux ?>
+              </a></li>
+
+              <li class="menusco liste" ><a class="menusco liste"  href="groupes.php?key=scouts">
+                 <?php echo Scouts ?>
+               </a></li>
+
+              <li class="menupio liste" ><a class="menupio liste"  href="groupes.php?key=pionniers">
+               <?php echo Pionniers ?>
              </a></li>
 
-            <li class="menufar liste" ><a class="menufar liste"  href="groupes.php?key=farfadets">
-               <?php echo Farfadets ?>
+              <li class="menucom liste"  ><a class="menucom liste"  href="groupes.php?key=compagnons">
+               <?php echo Compagnons ?>
              </a></li>
 
-            <li class="menulou liste" ><a class="menulou liste"  href="groupes.php?key=louveteaux">
-              <?php echo Louveteaux ?>
-            </a></li>
+             <li class="petit "><a class="petit1" href="liens.php"><?php echo Liens ?></a>
+                <a class="petit1" href="responsables.php"><?php echo Responsables ?></a>
+                <a class="petit1" href="credits.php"><?php echo Crédits ?></a>
+            </li>
 
-            <li class="menusco liste" ><a class="menusco liste"  href="groupes.php?key=scouts">
-               <?php echo Scouts ?>
-             </a></li>
-
-            <li class="menupio liste" ><a class="menupio liste"  href="groupes.php?key=pionniers">
-             <?php echo Pionniers ?>
-           </a></li>
-
-            <li class="menucom liste"  ><a class="menucom liste"  href="groupes.php?key=compagnons">
-             <?php echo Compagnons ?>
-           </a></li>
-
-           <li class="menucom liste"  ><a class="menucom liste"  href="plus.php"> 
-             <?php echo Plus ?>
-           </a></li>
           </ul>
       </div>
+
       <div class="page">
         <!--balise choix langue-->
 

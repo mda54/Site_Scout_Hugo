@@ -1,0 +1,26 @@
+.compagnons,.farfadets,.louveteaux,.pionniers,.scouts{
+  float: right;
+  text-align: center;
+  color: White;
+  width: 75%;
+  border: 1.5px solid white;
+  background-color: rgba(174, 181, 173, 0.6);
+  text-align: center;
+  color: white;
+  margin-bottom: 2em;
+}
+h1{
+  text-align: center;
+  color: white;
+  border: 1.5px solid white;
+  background-color: rgba(174, 181, 173, 0.6);
+  margin-left: 24.8%;
+}
+.id{
+  float: left;
+}
+.contenue{
+  float: right;
+  text-align: center;
+
+}

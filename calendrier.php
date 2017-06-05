@@ -3,7 +3,10 @@
 	<head>
 		 <meta charset="utf-8">
 		 <title>Calendrier-Scouts Saint-Fiacre Pulnoy</title>
-		 <link rel="stylesheet" href="css/calendrier.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (min-width: 1024px)and (max-width: 4000px)" href="css/csscalendrier/calendrier.css" />
+    <link rel="stylesheet" media="screen and (min-width:980px) and (max-width: 1023px)" href="css/csscalendrier/calendrier2.css" />
+    <link rel="stylesheet" media="screen and (min-width:640px) and (max-width: 979px)" href="css/csscalendrier/calendrier3.css" />
+    <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/csscalendrier/calendrier4.css" />
 	</head>
 <?php include("entete.php"); ?>
 <br>

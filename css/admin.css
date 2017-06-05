@@ -1,6 +1,21 @@
-*{
+.article, .photo, .accueil, .admin, .tete{
 text-align: center;
+color: white;
+margin-right: 2%;
+margin-bottom: 2%;
+border: 1.5px solid white;
+background-color: rgba(174, 181, 173, 0.6);
+display: float;
 }
+
+.tete
+{
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  margin-left: 25%;
+  margin-right: 5%;
+}
+
 .button
 {
     background-color: white;
@@ -19,66 +34,71 @@ text-align: center;
     background-image:linear-gradient(white, grey);
     padding: 5px 10px;
 }
+
 select{
   padding: 0.6em;
   margin: 1em;
 }
+
 .photo{
   float: left;
-  border: 1.5px solid white;
-  background-color: rgba(174, 181, 173, 0.6);
   text-align: center;
-  color: white;
-  margin: 2em;
+  margin-left: 30%;
   height: 60%;
   width: 30%;
 }
-.article{
+
+.article
+{
   float: left;
-  border: 1.5px solid white;
-  background-color: rgba(174, 181, 173, 0.6);
   text-align: center;
-  color: white;
-  margin: 2em;
+  margin-left: 30%;
   height: 90%;
   width: 30%;
 }
-.accueil{
+
+.accueil
+{
   float: left;
-  border: 1.5px solid white;
-  background-color: rgba(174, 181, 173, 0.6);
   text-align: center;
-  color: white;
-  margin: 2em;
   height: 90%;
   width: 30%;
 }
-.admin{
+
+.admin
+{
   float: left;
-  border: 1.5px solid white;
-  background-color: rgba(174, 181, 173, 0.6);
   text-align: center;
-  color: white;
-  margin: 2em;
   height: 60%;
   width: 30%;
 }
-.deco{
+
+.deco
+{
+
   margin-left: 48%;
-  padding: 0;
+  padding-left: 2%;
+  padding-right: 2%;
   float: left;
-  border: 1.5px solid white;
-  background-color: rgba(174, 181, 173, 0.6);
   text-align: center;
+  border: 2px solid;
+  background-color: rgb(174, 181, 173);
+  border-color: rgba(174, 181, 173, 0.6);
+  border-radius: 12px 0 12px 0;
+  margin-bottom: 2%;
 }
-.deco a{
+
+.deco a
+{
+
   color: black;
   text-decoration: none;
 }
-#text{
+
+#text
+{
   height: 10em;
   width: 95%;
 }
-h1{
-  color: white;
-}
+
+*/
