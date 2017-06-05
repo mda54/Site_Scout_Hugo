@@ -9,7 +9,7 @@
     <link rel="stylesheet" media="screen and (min-width:640px) and (max-width: 979px)" href="css/cssphotos/photos3.css" />
     <link rel="stylesheet" media="screen and (max-width: 639px)" href="css/cssphotos/photos4.css" />
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/fancyBox/source/jquery.fancybox.pack.js"></script>
   </head>
@@ -79,6 +79,6 @@
         $(".fancybox").fancybox();
       });
     </script>
-    
+
   </body>
 </html>
