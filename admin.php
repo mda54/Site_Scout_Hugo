@@ -18,7 +18,6 @@ include_once("fonction/get_articleByID.php");
 
 if (isset($_POST['Article_Add_choix']) and $_POST['Article_Add_choix']!="" and isset($_POST['Article_language']) and $_POST['Article_language']!="" and isset($_POST['Article_contenu']) and $_POST['Article_contenu']!="") {
   include_once("fonction/add_articleByCategorieAndLanguage.php");
-  echo $_POST['Article_contenu']." ".$_POST['Article_Add_choix']." ".$_POST['Article_language'];
   add_articleByCategorieAndLanguage($_POST['Article_contenu'],$_POST['Article_Add_choix'],$_POST['Article_language']);
 }
 
