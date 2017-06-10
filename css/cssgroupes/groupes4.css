@@ -3,7 +3,9 @@ h1
    font-size: 20px;
 }
 .description,.article,.photo{
+  /*
   display: float;
+  */
   float: right;
   text-align: center;
   color: White;
@@ -60,7 +62,7 @@ fieldset.ssiframe
   margin-left: 3%;
   background-color: rgba(174, 181, 173, 0.6);
 }
-iframe 
+iframe
 {
   width: 505px;
   height: 350px;

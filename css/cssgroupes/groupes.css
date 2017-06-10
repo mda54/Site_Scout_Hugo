@@ -1,5 +1,7 @@
 .description,.article,.photo{
+  /*
   display: float;
+  */
   float: right;
   text-align: center;
   color: White;
@@ -13,7 +15,6 @@
   margin-top: 2em;
 }
 .photo a{
-  /*float: right;*/
   color: rgb(0, 26, 68);
   text-decoration: none;
   margin-left: 70%;
