@@ -38,7 +38,7 @@
 }
 .logomenu
 {
-  width: 100px;
+  width: 150px;
   height: auto;
   padding: 2%;
   padding-top: 20px
@@ -223,7 +223,7 @@ div.logo
   transition : width 0.5s,height 0.5s;
 }
 
-.petit 
+.petit
 {
   display : flex;
   justify-content : space-around;
