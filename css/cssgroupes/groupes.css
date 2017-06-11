@@ -1,7 +1,4 @@
 .description,.article,.photo{
-  /*
-  display: float;
-  */
   float: right;
   text-align: center;
   color: White;

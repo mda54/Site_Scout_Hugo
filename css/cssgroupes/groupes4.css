@@ -3,9 +3,6 @@ h1
    font-size: 20px;
 }
 .description,.article,.photo{
-  /*
-  display: float;
-  */
   float: right;
   text-align: center;
   color: White;
