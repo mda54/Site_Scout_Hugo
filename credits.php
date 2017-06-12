@@ -32,7 +32,7 @@ if (isset($_POST['formulaire'])) {
 
   <body>
     <?php include("entete.php");
-    if ($_SESSION['langue']=="en") {
+    if (isset($_SESSION['langue']) and $_SESSION['langue']=="en") {
       ?>
     <h1>Crédits</h1>
 
